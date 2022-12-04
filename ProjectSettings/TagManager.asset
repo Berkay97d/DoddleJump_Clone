@@ -42,3 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1146218337
+    locked: 0
+  - name: Platform
+    uniqueID: 41877135
+    locked: 0
+  - name: Player
+    uniqueID: 2537128557
+    locked: 0
+  - name: PlayerBoost
+    uniqueID: 2715613623
+    locked: 0
+  - name: PlatformBoost
+    uniqueID: 3875073779
+    locked: 0
