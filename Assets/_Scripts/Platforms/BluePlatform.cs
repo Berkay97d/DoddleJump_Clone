@@ -21,14 +21,14 @@ public class BluePlatform : Platform
     {
         if (transform.position.x < 0)
         {
-            transform.DOMove(right, speed).SetSpeedBased().OnComplete(() =>
+            transform.DOLocalMove(right, speed).SetSpeedBased().OnComplete(() =>
             {
                 Move();
             });
         }
         else
         {
-            transform.DOMove(left, speed).SetSpeedBased().OnComplete(() =>
+            transform.DOLocalMove(left, speed).SetSpeedBased().OnComplete(() =>
             {
                 Move();
             });
@@ -37,7 +37,7 @@ public class BluePlatform : Platform
 
     private void DefinePositions()
     {
-        var position = transform.position;
+        var position = transform.localPosition;
         left = new Vector3(-xLimit, position.y, position.z);
         right = new Vector3(xLimit, position.y, position.z);
     }

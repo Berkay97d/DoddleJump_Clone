@@ -9,14 +9,14 @@ public class PlayerJumper : MonoBehaviour
     [SerializeField] private float jumpForce;
 
     private Rigidbody2D rb;
-
+    
     
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Jump()
+    private void Jump(float force)
     {
         if (!PlayerProperties.Instance.IsFalling())
         {
@@ -24,7 +24,7 @@ public class PlayerJumper : MonoBehaviour
         }
         
         var velocity = rb.velocity;
-        velocity.y = jumpForce;
+        velocity.y = force;
         rb.velocity = velocity;
     }
 
@@ -32,7 +32,12 @@ public class PlayerJumper : MonoBehaviour
     {
         if (col.collider.CompareTag("Platform"))
         {
-            Jump();
+            Jump(jumpForce);
+        }
+        
+        if (col.collider.CompareTag("Jumper"))
+        {
+            Jump(jumpForce*3);
         }
     }
     

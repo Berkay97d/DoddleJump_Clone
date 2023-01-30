@@ -80,7 +80,6 @@ public class PlayerHorizontalMove : MonoBehaviour
             
             transform.position = position;
         }
-
         
     }
 
