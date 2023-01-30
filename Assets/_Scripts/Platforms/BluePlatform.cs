@@ -6,65 +6,40 @@ using UnityEngine;
 
 public class BluePlatform : Platform
 {
-    private enum Side
-    {
-        Left,Right      
-    }
-    private Side side;
-    private void OnEnable()
-    {
-        if (transform.position.x < 0)
-        {
-            side = Side.Left;
-        }
-        else
-        {
-            side = Side.Right;
-        }
-    }
-
-    [SerializeField] private float oscillationLimit ;
-
+    
+    [SerializeField] private float xLimit ;
+    [SerializeField] private float speed;
+    private Vector3 left, right;
+    
     private void Start()
     {
+        DefinePositions();
         Move();
     }
 
     private void Move()
     {
-        var position = transform.position;
-        if (side == Side.Left)
+        if (transform.position.x < 0)
         {
-            var target = new Vector3(oscillationLimit, transform.position.y, 0);
-            var returnTarget = new Vector3(-oscillationLimit, transform.position.y, 0);
-            
-            transform.DOMoveX(target.x, 1f).SetSpeedBased().OnComplete(() =>
+            transform.DOMove(right, speed).SetSpeedBased().OnComplete(() =>
             {
-                transform.DOMoveX(returnTarget.x,1f).SetSpeedBased().OnComplete(() =>
-                {
-                    transform.DOMoveX(position.x, 1f).SetSpeedBased().OnComplete(() =>
-                    {
-                        
-                    });
-                });
-            }).SetLoops(-1);
+                Move();
+            });
         }
         else
         {
-            var target = new Vector3(-oscillationLimit, transform.position.y, 0);
-            var returnTarget = new Vector3(oscillationLimit, transform.position.y, 0);
-            
-            transform.DOMoveX(target.x, 1f).SetSpeedBased().OnComplete(() =>
+            transform.DOMove(left, speed).SetSpeedBased().OnComplete(() =>
             {
-                transform.DOMoveX(returnTarget.x,1f).SetSpeedBased().OnComplete(() =>
-                {
-                    transform.DOMoveX(position.x, 1f).SetSpeedBased().OnComplete(() =>
-                    {
-                        
-                    });
-                });
-            }).SetLoops(-1);
+                Move();
+            });
         }
+    }
+
+    private void DefinePositions()
+    {
+        var position = transform.position;
+        left = new Vector3(-xLimit, position.y, position.z);
+        right = new Vector3(xLimit, position.y, position.z);
     }
     
     

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jumper : MonoBehaviour
+public class PlayerJumper : MonoBehaviour
 {
     [Header("Values")]
     [SerializeField] private float jumpForce;

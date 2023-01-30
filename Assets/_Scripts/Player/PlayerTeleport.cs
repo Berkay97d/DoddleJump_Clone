@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Teleporter : MonoBehaviour
+public class PlayerTeleport : MonoBehaviour
 {
     [SerializeField] private float xLim;
     [SerializeField] private float tpPos;

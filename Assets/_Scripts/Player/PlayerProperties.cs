@@ -3,30 +3,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerDirection{
+    Left,
+    Right
+}
+
 public class PlayerProperties : MonoBehaviour
 {
-    #region Singleton
-
     public static PlayerProperties Instance;
+    public static PlayerDirection Direction;
+    public static float HighestWidth { get; private set; }
+    [SerializeField] private Rigidbody2D rb;
+    
+    
     private void OnEnable()
     {
         Instance = this;
+        Direction = PlayerDirection.Right;
+        HighestWidth = transform.position.y;
     }
-    
-    #endregion
 
-    private Rigidbody2D rb;
-
-    
-    private void Awake()
+    private void Update()
     {
-        rb = GetComponent<Rigidbody2D>();
+        UpdateHighestWidth();
     }
-    
+
     public bool IsFalling()
     {
         return rb.velocity.y < 0.1f;
     }
 
-    
+    private void UpdateHighestWidth()
+    {
+        if (transform.position.y > HighestWidth)
+        {
+            HighestWidth = transform.position.y;
+        }
+    }
 }

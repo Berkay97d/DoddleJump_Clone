@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorizontalMover : MonoBehaviour
+
+
+
+public class PlayerHorizontalMove : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float lim;
-    
+
     private void Update()
     {
         Move();
@@ -45,6 +47,16 @@ public class HorizontalMover : MonoBehaviour
             // Make it move 10 meters per second instead of 10 meters per frame...
             dir *= Time.deltaTime;
 
+            // Handle rotation
+            if (dir.x < 0)
+            {
+                PlayerProperties.Direction = PlayerDirection.Left;
+            }
+            else if (dir.x > 0)
+            {
+                PlayerProperties.Direction = PlayerDirection.Right;
+            }
+            
             // Move object
             transform.Translate(dir * speed * 2);
         }
@@ -55,6 +67,17 @@ public class HorizontalMover : MonoBehaviour
             var playerInput = Input.GetAxis("Horizontal");
             
             position.x += playerInput * speed * Time.deltaTime;
+            
+            if (playerInput < 0)
+            {
+                PlayerProperties.Direction = PlayerDirection.Left;
+            }
+            else if (playerInput > 0)
+            {
+                PlayerProperties.Direction = PlayerDirection.Right;
+            }
+            
+            
             transform.position = position;
         }
 
