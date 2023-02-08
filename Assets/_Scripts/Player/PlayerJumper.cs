@@ -12,11 +12,13 @@ public class PlayerJumper : MonoBehaviour
     
     
     
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
+    
     private void Jump(float force)
     {
         if (!PlayerProperties.Instance.IsFalling())
@@ -29,6 +31,7 @@ public class PlayerJumper : MonoBehaviour
         rb.velocity = velocity;
     }
 
+    
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.collider.CompareTag("Platform"))
