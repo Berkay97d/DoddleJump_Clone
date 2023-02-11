@@ -31,6 +31,7 @@ public class PlayerJumper : MonoBehaviour
     }
 
     
+    
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.collider.CompareTag("Platform"))
