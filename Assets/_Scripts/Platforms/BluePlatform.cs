@@ -7,9 +7,11 @@ using UnityEngine;
 public class BluePlatform : Platform
 {
     
-    [SerializeField] private float xLimit ;
-    [SerializeField] private float speed;
-    private Vector3 left, right;
+    [SerializeField] private float _xLimit ;
+    [SerializeField] private float _speed;
+    
+    private Vector3 m_Left, m_Right;
+    
     
     private void Start()
     {
@@ -21,25 +23,19 @@ public class BluePlatform : Platform
     {
         if (transform.position.x < 0)
         {
-            transform.DOLocalMove(right, speed).SetSpeedBased().OnComplete(() =>
-            {
-                Move();
-            });
+            transform.DOLocalMove(m_Right, _speed).SetSpeedBased().OnComplete(Move);
         }
         else
         {
-            transform.DOLocalMove(left, speed).SetSpeedBased().OnComplete(() =>
-            {
-                Move();
-            });
+            transform.DOLocalMove(m_Left, _speed).SetSpeedBased().OnComplete(Move);
         }
     }
 
     private void DefinePositions()
     {
         var position = transform.localPosition;
-        left = new Vector3(-xLimit, position.y, position.z);
-        right = new Vector3(xLimit, position.y, position.z);
+        m_Left = new Vector3(-_xLimit, position.y, position.z);
+        m_Right = new Vector3(_xLimit, position.y, position.z);
     }
     
     

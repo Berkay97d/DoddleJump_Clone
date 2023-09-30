@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class CamFollower : MonoBehaviour
 {
-    [SerializeField] private float followOffset;
+    [SerializeField] private float _followOffset;
+    
+    
     private void LateUpdate()
     {
         var position = transform.position;
-        position.y = PlayerProperties.HighestWidth + followOffset;
+        position.y = PlayerProperties.HighestWidth + _followOffset;
         transform.position = position;
     }
     

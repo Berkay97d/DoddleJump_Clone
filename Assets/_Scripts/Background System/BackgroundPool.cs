@@ -5,10 +5,8 @@ using UnityEngine;
 
 public class BackgroundPool : MonoBehaviour
 {
-    private Queue<BackgroundController> backgrounds = new Queue<BackgroundController>();
-    private Vector3 offset; 
-    
-    
+    private readonly Queue<BackgroundController> m_Backgrounds = new Queue<BackgroundController>();
+    private Vector3 m_Offset; 
     
     private void Awake()
     {
@@ -16,20 +14,20 @@ public class BackgroundPool : MonoBehaviour
 
         foreach (var background in bgs)
         {
-            backgrounds.Enqueue(background);
+            m_Backgrounds.Enqueue(background);
             background.Inject(this);
         }
 
-        offset = bgs[1].transform.position - bgs[0].transform.position;
+        m_Offset = bgs[1].transform.position - bgs[0].transform.position;
     }
 
     public void CycleBackground()
     {
-        var bg = backgrounds.Dequeue();
-        bg.transform.position += 3 * offset;
-        bg.flag = false;
+        var bg = m_Backgrounds.Dequeue();
+        bg.transform.position += 3 * m_Offset;
+        bg._flag = false;
         bg.DestroyPlatform();
         bg.CreatePlatform();
-        backgrounds.Enqueue(bg);
+        m_Backgrounds.Enqueue(bg);
     }
 }

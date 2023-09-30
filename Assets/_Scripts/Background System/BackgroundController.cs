@@ -6,10 +6,12 @@ using Random = UnityEngine.Random;
 
 public class BackgroundController : MonoBehaviour
 {
-    [SerializeField] private List<PlatformGroup> platformGroups;
-    private PlatformGroup myPlatformGroup;
-    private BackgroundPool backgroundPool;
-    public bool flag = false;
+    [SerializeField] private List<PlatformGroup> _platformGroups;
+    
+    public bool _flag = false;
+    
+    private PlatformGroup m_MyPlatformGroup;
+    private BackgroundPool m_BackgroundPool;
     
 
     private void Start()
@@ -19,25 +21,25 @@ public class BackgroundController : MonoBehaviour
 
     public void CreatePlatform()
     {
-        var randomNum = Random.Range(0, platformGroups.Count);
-        myPlatformGroup = Instantiate(platformGroups[randomNum], transform.position, Quaternion.identity);
+        var randomNum = Random.Range(0, _platformGroups.Count);
+        m_MyPlatformGroup = Instantiate(_platformGroups[randomNum], transform.position, Quaternion.identity);
     }
 
     public void DestroyPlatform()
     {
-        Destroy(myPlatformGroup.gameObject);
+        Destroy(m_MyPlatformGroup.gameObject);
     }
     
     public void Inject(BackgroundPool bgPool)
     {
-        backgroundPool = bgPool;
+        m_BackgroundPool = bgPool;
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.CompareTag("Player") && !flag)
+        if (col.CompareTag("Player") && !_flag)
         {
-            backgroundPool.CycleBackground();
-            flag = true;
+            m_BackgroundPool.CycleBackground();
+            _flag = true;
         } 
     }
     
