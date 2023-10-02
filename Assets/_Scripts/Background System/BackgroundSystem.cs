@@ -7,6 +7,8 @@ public class BackgroundSystem : MonoBehaviour
 {
     [SerializeField] private Background[] _backgrounds;
     [SerializeField] private float _distanceBetweenBackgrounds;
+
+    public event Action<Background> OnBackgroundMoved;
     
 
     private void Start()
@@ -34,6 +36,7 @@ public class BackgroundSystem : MonoBehaviour
             var uppestBackground = GetBackgroundByOrder(2);
             
             MoveBackgroundUpper(underestBackground, uppestBackground);
+            OnBackgroundMoved?.Invoke(underestBackground);
             
             underestBackground.SetOrder(2);
             middleBackground.SetOrder(0);

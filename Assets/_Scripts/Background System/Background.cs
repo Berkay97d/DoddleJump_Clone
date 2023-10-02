@@ -9,6 +9,8 @@ using Random = UnityEngine.Random;
 public class Background : MonoBehaviour
 {
     [SerializeField] private int _order;
+    [SerializeField] private PlatformGroup _backgroundPlatformGroup;
+    
     
     public event Action<Background> OnPlayerReached;
     
@@ -23,6 +25,8 @@ public class Background : MonoBehaviour
     private void Start()
     {
         m_BackgroundMiddlePoint.OnPlayerReached += OnPlayerReachedMiddlePoint;
+        
+        InitPlatformGroup();
     }
 
     private void OnDestroy()
@@ -33,6 +37,24 @@ public class Background : MonoBehaviour
     private void OnPlayerReachedMiddlePoint()
     {
         OnPlayerReached?.Invoke(this);
+    }
+
+    private void InitPlatformGroup(PlatformGroup platformGroup)
+    {
+        var newBackgroundPlatformGroup = Instantiate(platformGroup);
+        newBackgroundPlatformGroup.transform.position = transform.position;
+
+        _backgroundPlatformGroup = newBackgroundPlatformGroup;
+    }
+    
+    private void InitNewPlatformGroup(PlatformGroup platformGroup)
+    {
+        Destroy(_backgroundPlatformGroup.gameObject);
+
+        var newBackgroundPlatformGroup = Instantiate(platformGroup);
+        newBackgroundPlatformGroup.transform.position = transform.position;
+
+        _backgroundPlatformGroup = newBackgroundPlatformGroup;
     }
 
     public void SetOrder(int order)

@@ -5,8 +5,5 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    private void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
+    
 }
