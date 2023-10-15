@@ -26,7 +26,7 @@ public class Background : MonoBehaviour
     {
         m_BackgroundMiddlePoint.OnPlayerReached += OnPlayerReachedMiddlePoint;
         
-        InitPlatformGroup();
+        // InitPlatformGroup();
     }
 
     private void OnDestroy()
