@@ -20,7 +20,7 @@ namespace _Scripts.Platforms
 
         private void OnBackgroundMoved(Background obj)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
