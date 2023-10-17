@@ -15,7 +15,7 @@ public class GameOverUI : MonoBehaviour
 
     private void OnPlayeDead()
     {
-        var newPos = new Vector3(transform.position.x, PlayerProperties.HighestWidth - 15, transform.position.z);
+        var newPos = new Vector3(transform.position.x, PlayerProperties.HighestWidth - 20, transform.position.z);
         _mainTransform.position = newPos;
         
         _mainTransform.gameObject.SetActive(true);

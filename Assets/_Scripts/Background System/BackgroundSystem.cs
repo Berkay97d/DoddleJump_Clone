@@ -7,7 +7,8 @@ public class BackgroundSystem : MonoBehaviour
 {
     [SerializeField] private Background[] _backgrounds;
     [SerializeField] private float _distanceBetweenBackgrounds;
-
+    [SerializeField] private Background _onDeadBackground;
+    
     public event Action<Background> OnBackgroundMoved;
     
 
@@ -17,16 +18,31 @@ public class BackgroundSystem : MonoBehaviour
         {
             background.OnPlayerReached += OnPlayerReachedBackgroundMiddle;
         }
+        
+        PlayerDeadChecker.Instance.OnPlayerDead += OnPlayerDead;
     }
-
+    
     private void OnDestroy()
     {
         foreach (var background in _backgrounds)
         {
             background.OnPlayerReached -= OnPlayerReachedBackgroundMiddle;
         }
+        
+        PlayerDeadChecker.Instance.OnPlayerDead -= OnPlayerDead;
     }
 
+    private void OnPlayerDead()
+    {
+        var highest = GetBackgroundByOrder(2);
+        var lowest = GetBackgroundByOrder(0);
+
+        var onDeadPos = new Vector3(highest.transform.position.x,
+            lowest.transform.position.y - _distanceBetweenBackgrounds, highest.transform.position.z);
+
+        _onDeadBackground.transform.position = onDeadPos;
+    }
+    
     private void OnPlayerReachedBackgroundMiddle(Background background)
     {
         if (background.GetOrder() == 2)
