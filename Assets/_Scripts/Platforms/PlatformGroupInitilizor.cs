@@ -49,7 +49,6 @@ namespace _Scripts.Platforms
             Destroy(m_CurrentPlatformGroup.gameObject);
 
             m_CurrentPlatformGroup = Instantiate(SelectRandomPlatformGroup(), transform);
-            m_CurrentPlatformGroup.transform.SetParent(transform);
             m_CurrentPlatformGroup.transform.localPosition = Vector3.zero;
         }
 

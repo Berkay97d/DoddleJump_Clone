@@ -43,6 +43,11 @@ public class PlayerJumper : MonoBehaviour
         {
             Jump(jumpForce*3);
         }
+
+        if (col.collider.CompareTag("Spring"))
+        {
+            Jump(jumpForce*1.75f);
+        }
     }
     
     

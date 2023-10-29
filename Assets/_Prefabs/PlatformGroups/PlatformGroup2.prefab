@@ -416,7 +416,7 @@ Transform:
   - {fileID: 1035474219896544812}
   - {fileID: 5175632127893768219}
   - {fileID: 2116905797870186672}
-  - {fileID: 7223222042792127171}
+  - {fileID: 7625235227334294770}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -699,8 +699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb84705f5ce1164e9e7d3d4944d6493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xLimit: 1.7
-  speed: 3
+  _xLimit: 0
+  _speed: 0
 --- !u!1 &8256284699827412331
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,65 +828,65 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
---- !u!1001 &6403452808190281803
+--- !u!1001 &3866793409114716800
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 8916929056924503}
     m_Modifications:
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 4154523972585726472, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
+      propertyPath: m_Name
+      value: GreenJumperPlatform 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.38
+      value: -1.29
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.01
+      value: -1.85
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
+    - target: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6431042234091046642, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
-      propertyPath: m_Name
-      value: 'JumperPlatform '
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
---- !u!4 &7223222042792127171 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
+--- !u!4 &7625235227334294770 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4387535504385352328, guid: d5a1462a4cca5ab49aa1288096775a8a, type: 3}
-  m_PrefabInstance: {fileID: 6403452808190281803}
+  m_CorrespondingSourceObject: {fileID: 6664160968342537842, guid: b52bfd386ae45e84ba8ef3c774423178, type: 3}
+  m_PrefabInstance: {fileID: 3866793409114716800}
   m_PrefabAsset: {fileID: 0}
