@@ -11,7 +11,9 @@ namespace _Scripts.Platforms
         [SerializeField] private PlatformGroup _startPlatformGroup;
         [SerializeField] private PlatformGroup[] _platformGroups;
         [SerializeField] private bool _isStartBackground;
-
+        [SerializeField] private Transform platformGroupParent;
+        
+        
         private PlatformGroup m_CurrentPlatformGroup;
         
         
@@ -21,16 +23,14 @@ namespace _Scripts.Platforms
 
             if (_isStartBackground)
             {
-                m_CurrentPlatformGroup = Instantiate(_startPlatformGroup);
-                m_CurrentPlatformGroup.transform.SetParent(transform);
-                m_CurrentPlatformGroup.transform.localPosition = Vector3.zero;
+                m_CurrentPlatformGroup = Instantiate(_startPlatformGroup, platformGroupParent);
+                m_CurrentPlatformGroup.transform.position = transform.position;
                 
             }
             else
             {
-                m_CurrentPlatformGroup = Instantiate(SelectRandomPlatformGroup());
-                m_CurrentPlatformGroup.transform.SetParent(transform);
-                m_CurrentPlatformGroup.transform.localPosition = Vector3.zero;
+                m_CurrentPlatformGroup = Instantiate(SelectRandomPlatformGroup(), platformGroupParent);
+                m_CurrentPlatformGroup.transform.position = transform.position;
             }
         }
 
@@ -48,8 +48,8 @@ namespace _Scripts.Platforms
             
             Destroy(m_CurrentPlatformGroup.gameObject);
 
-            m_CurrentPlatformGroup = Instantiate(SelectRandomPlatformGroup(), transform);
-            m_CurrentPlatformGroup.transform.localPosition = Vector3.zero;
+            m_CurrentPlatformGroup = Instantiate(SelectRandomPlatformGroup(), platformGroupParent);
+            m_CurrentPlatformGroup.transform.position = transform.position;
         }
 
         private PlatformGroup SelectRandomPlatformGroup()

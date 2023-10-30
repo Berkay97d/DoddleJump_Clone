@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8576102368427389391}
   - component: {fileID: 6084124335336951463}
   - component: {fileID: 6084124335336951462}
+  - component: {fileID: 5224274242292279268}
   m_Layer: 0
   m_Name: GreenJumperPlatform 1
   m_TagString: Platform
@@ -128,6 +129,18 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &5224274242292279268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154523972585726472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fba8bd99596694ba8dcf98af6b0fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7348188388060811553
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +153,6 @@ GameObject:
   - component: {fileID: 3123730440000815846}
   - component: {fileID: 590799739407269262}
   - component: {fileID: 590799739407269263}
-  - component: {fileID: 2246066468551806924}
   m_Layer: 0
   m_Name: JumperPlatform
   m_TagString: Jumper
@@ -256,15 +268,3 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
---- !u!114 &2246066468551806924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7348188388060811553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62fba8bd99596694ba8dcf98af6b0fb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
