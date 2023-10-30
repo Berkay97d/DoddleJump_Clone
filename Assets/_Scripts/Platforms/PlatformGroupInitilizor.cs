@@ -56,5 +56,7 @@ namespace _Scripts.Platforms
         {
             return _platformGroups[Random.Range(0, _platformGroups.Length)];
         }
+        
+        //TODO: SCORE - HIGSCORE - CAP - ROCKET - RESTART GAME - PLATFORM GROUP VARIATIONS - FIRE - 2 MONSTER
     }
 }
