@@ -1,4 +1,5 @@
 ﻿using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace _Scripts.Boost
@@ -9,6 +10,8 @@ namespace _Scripts.Boost
         [SerializeField] private float _boostLifeTime;
         [SerializeField] private float _boostMoveSpeed;
 
+        public event Action OnBoostOver;
+        
         private bool m_isActive;
         private float m_activePastTime;
 
@@ -24,6 +27,8 @@ namespace _Scripts.Boost
                     
                     StopBoostAnimation();
                     DropToDown();
+                    
+                    OnBoostOver?.Invoke();
                 }
             }
         }
@@ -41,12 +46,17 @@ namespace _Scripts.Boost
         private void DropToDown()
         {
             transform.parent = null;
-            transform.position += Vector3.down;
+            transform.DOMove(transform.position + Vector3.down * 20, 2).SetEase(Ease.InCirc).OnComplete(() =>
+            {
+                Destroy(gameObject);
+            });
+            Destroy(GetComponent<BoxCollider2D>());
         }
         
         public void TriggerBoost(Transform targetTransform)
         {
             transform.parent = targetTransform;
+            transform.localPosition = Vector3.zero;
 
             m_isActive = true;
             

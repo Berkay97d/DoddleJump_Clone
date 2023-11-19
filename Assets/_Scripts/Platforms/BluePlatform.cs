@@ -21,14 +21,14 @@ public class BluePlatform : Platform
 
     private void Move()
     {
-        if (transform.position.x < 0)
+        /*if (transform.position.x < 0)
         {
             transform.DOLocalMove(m_Right, _speed).SetSpeedBased().OnComplete(Move);
         }
         else
         {
             transform.DOLocalMove(m_Left, _speed).SetSpeedBased().OnComplete(Move);
-        }
+        }*/
     }
 
     private void DefinePositions()

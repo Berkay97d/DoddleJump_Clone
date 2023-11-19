@@ -8,6 +8,8 @@ TagManager:
   - Trigger
   - Jumper
   - Spring
+  - Cap
+  - Rocket
   layers:
   - Default
   - TransparentFX
