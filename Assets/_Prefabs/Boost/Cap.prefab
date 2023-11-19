@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _boostAnimator: {fileID: 4359187067332796059}
   _boostLifeTime: 5
-  _boostMoveSpeed: 8
+  _boostMoveSpeed: 7
 --- !u!95 &4359187067332796059
 Animator:
   serializedVersion: 4
