@@ -40,4 +40,9 @@ public class PlayerProperties : MonoBehaviour
             HighestWidth = transform.position.y;
         }
     }
+
+    public float GetHighestWidth()
+    {
+        return HighestWidth;
+    }
 }
