@@ -17,13 +17,13 @@ public class PlayerHorizontalMove : MonoBehaviour
 
     private void Move()
     {
-        if (Application.isMobilePlatform)
+        if (Application.isEditor)
         {
-            MoveMobile();
+            MovePc();   
         }
         else
         {
-            MovePc();
+            MoveMobile();
         }
         
         
