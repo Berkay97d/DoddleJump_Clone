@@ -1,17 +1,51 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
 public class PlayerHorizontalMove : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private Button leftMoveButton;
-    [SerializeField] private Button rightMoveButton;
+    [SerializeField] private DoddleButton leftButton;
+    [SerializeField] private DoddleButton rightButton;
     
-    
+    private float leftInput = 0;
+    private float rightInput = 0;
+
+
+    private void Start()
+    {
+        leftButton.onDown += OnLeftDown;
+        leftButton.onUp += OnLeftUp;
+        
+        rightButton.onDown += OnRightDown;
+        rightButton.onUp += OnRightUp;
+    }
+
+    private void OnRightUp()
+    {
+        rightInput = 0;
+    }
+
+    private void OnRightDown()
+    {
+        rightInput = 1;
+    }
+
+    private void OnLeftUp()
+    {
+        leftInput = 0;
+    }
+
+    private void OnLeftDown()
+    {
+        leftInput = -1;
+    }
+
     private void Update()
     {
         Move();
@@ -19,14 +53,7 @@ public class PlayerHorizontalMove : MonoBehaviour
 
     private void Move()
     {
-        if (Application.isEditor)
-        {
-            MovePc();   
-        }
-        else
-        {
-            MoveKaraca();
-        }
+        MoveKaraca();
         
         
         void MoveMobile()
@@ -86,7 +113,7 @@ public class PlayerHorizontalMove : MonoBehaviour
         void MoveKaraca()
         {
             var position = transform.position;
-            var playerInput = GetButtonInput();
+            var playerInput = leftInput+rightInput;
             
             position.x += playerInput * speed * Time.deltaTime;
             
@@ -105,28 +132,7 @@ public class PlayerHorizontalMove : MonoBehaviour
     }
     
     
-    float GetButtonInput()
-    {
-        int input = 0;
-
-        // Sağdaki butona basılırsa 1 döndür
-        if (rightMoveButton.interactable && rightMoveButton.onClick != null)
-        {
-            input = 1;
-        }
-        // Soldaki butona basılırsa -1 döndür
-        else if (leftMoveButton.interactable && leftMoveButton.onClick != null)
-        {
-            input = -1;
-        }
-        // İkisine de basılmazsa veya herhangi birine basılmazsa 0 döndür
-        else
-        {
-            input = 0;
-        }
-
-        return input;
-    }
+    
 }
 
     
