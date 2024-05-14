@@ -2,14 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.UI;
 
 
 public class PlayerHorizontalMove : MonoBehaviour
 {
     [SerializeField] private float speed;
-
+    [SerializeField] private Button leftMoveButton;
+    [SerializeField] private Button rightMoveButton;
+    
+    
     private void Update()
     {
         Move();
@@ -23,7 +25,7 @@ public class PlayerHorizontalMove : MonoBehaviour
         }
         else
         {
-            MoveMobile();
+            MoveKaraca();
         }
         
         
@@ -80,8 +82,52 @@ public class PlayerHorizontalMove : MonoBehaviour
             
             transform.position = position;
         }
-        
+
+        void MoveKaraca()
+        {
+            var position = transform.position;
+            var playerInput = GetButtonInput();
+            
+            position.x += playerInput * speed * Time.deltaTime;
+            
+            if (playerInput < 0)
+            {
+                PlayerProperties.Direction = PlayerDirection.Left;
+            }
+            else if (playerInput > 0)
+            {
+                PlayerProperties.Direction = PlayerDirection.Right;
+            }
+            
+            
+            transform.position = position;
+        }
     }
+    
+    
+    float GetButtonInput()
+    {
+        int input = 0;
+
+        // Sağdaki butona basılırsa 1 döndür
+        if (rightMoveButton.interactable && rightMoveButton.onClick != null)
+        {
+            input = 1;
+        }
+        // Soldaki butona basılırsa -1 döndür
+        else if (leftMoveButton.interactable && leftMoveButton.onClick != null)
+        {
+            input = -1;
+        }
+        // İkisine de basılmazsa veya herhangi birine basılmazsa 0 döndür
+        else
+        {
+            input = 0;
+        }
+
+        return input;
+    }
+}
 
     
-}
+
