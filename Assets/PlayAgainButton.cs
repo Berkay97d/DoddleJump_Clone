@@ -5,16 +5,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class playagain : MonoBehaviour
+public class PlayAgainButton : MonoBehaviour
 {
-     private Button m_button;
+     private Button m_Button;
 
 
      private void Start()
      {
-          m_button = GetComponent<Button>();
+          m_Button = GetComponent<Button>();
           
-          m_button.onClick.AddListener(() =>
+          m_Button.onClick.AddListener(() =>
           {
                SceneManager.LoadScene(0);
           });
