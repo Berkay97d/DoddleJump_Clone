@@ -14,6 +14,7 @@ public class PlayerHorizontalMove : MonoBehaviour
     
     private float m_LeftInput;
     private float m_RightInput;
+    private bool m_CanChangeInput;
 
 
     private void Awake()
@@ -39,6 +40,7 @@ public class PlayerHorizontalMove : MonoBehaviour
     private void OnWorldPositionChanged(Vector2 position)
     {
         if (position == Vector2.zero) return;
+        if (!m_CanChangeInput) return;
         
         Vector2 playerPos = transform.position;
         Vector2 touchWorldPos = TouchInputManager.GetWorldPosition();
@@ -47,13 +49,11 @@ public class PlayerHorizontalMove : MonoBehaviour
         {
             m_LeftInput = -1;
             m_RightInput = 0;
-            Debug.Log("Left");
         }
         else if (playerPos.x < touchWorldPos.x)
         {
             m_RightInput = 1;
             m_LeftInput = 0;
-            Debug.Log("Right");
         }
     }
 
@@ -62,20 +62,33 @@ public class PlayerHorizontalMove : MonoBehaviour
         TryMove();
     }
 
-    private bool TryMove()
+    private void TryMove()
     {
-        if (Math.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) < 0.1f) return false;
-
-        Move();
+        if (Mathf.Abs(TouchInputManager.GetWorldPosition().x) < 2f)
+        {
+            if (Math.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) > 0.1f)
+            {
+                Move();
+                m_CanChangeInput = true;
+                
+                return;
+            }
+            else
+            {
+                return;
+                
+                m_LeftInput = 0;
+                m_RightInput = 0;
+            }
+        }
         
-        return true;
+        m_CanChangeInput = false;
+        Move();
     }
 
     private void Move()
     {
         float playerInput = m_LeftInput + m_RightInput;
-
-        if (playerInput == 0) return;
         
         Vector3 position = transform.position;
             
