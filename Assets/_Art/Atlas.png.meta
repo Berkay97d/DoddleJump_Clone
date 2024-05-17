@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -114,7 +114,679 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Necati
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2499
+        width: 240
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5628c3001b7fdb24cb7c69e2841faf53
+      internalID: 1810698292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Background 2
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1537
+        width: 717
+        height: 1278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2325aa4783095be4e9523c30fa286b57
+      internalID: -266615509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 2727
+        width: 215
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ddb30c5f5faad48bcec67862585ce3
+      internalID: -1839728453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 2694
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d04339a41dc1c146a6f5fd62c83b5b5
+      internalID: 1180994105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Single 1
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2683
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848f990896b80f24dbaffd67e18a1922
+      internalID: 1070605614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canan Icon
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 2493
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14bce6272677074a91227ca9f53a43d
+      internalID: -731830827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u015Eakir Icon"
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 2487
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f4730a99946244a8e406a7be5a2c11
+      internalID: -820987670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest 1
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 2627
+        width: 130
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523980a49c56f6b48ada73893b117e8e
+      internalID: -1184802797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baloon Power-Up
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2398
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39b61e20c082ca47bce386647215d22
+      internalID: -1923607872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u015Eakir"
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 2356
+        width: 240
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5068d0ef21e8e9f498f4398a667b8f41
+      internalID: -1864692544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Single 2
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 2499
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce9df4d5462d03448f0de2cda8c4adc
+      internalID: 546190199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 2499
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ff335f40da8f648b6852619423b7e5
+      internalID: 1248836579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Devler Uyand\u0131 Text"
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2174
+        width: 393
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d7d8daec000594d9a41f3c189d3718
+      internalID: 1520749180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Kral \u015Eakir Text"
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 2174
+        width: 278
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88971ae401cef07439161aece4c2a72c
+      internalID: -1179215039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest 2
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 2289
+        width: 130
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2ef179a08a254419b9fed162b9b968
+      internalID: 23518186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin 1
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 2175
+        width: 110
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265571efe94cba840984400cb83e3a58
+      internalID: -661898177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necat
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 2001
+        width: 240
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69f1793d4c01bb4f856add422131f98
+      internalID: 344278503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin 2
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 2068
+        width: 110
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0839e80e633e8fb479ab6e6ec2f17bbc
+      internalID: -1579579591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 2067
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec014803a8a86954aa913498c839feb6
+      internalID: 1768126370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Start Screen
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 126
+        width: 1084
+        height: 1924
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929bf6e0c207dcc43b7877b517fe41c3
+      internalID: 594823471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u015Eaki"
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 1641
+        width: 240
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d532dfb29f622b449fa3af7e964b4f0
+      internalID: -816859319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform Double
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 1866
+        width: 176
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56a3c4160b84bb46855737952653f9e
+      internalID: 391969556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remzi Ican
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 1572
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70607f9f8810a5147a151757b65e0972
+      internalID: 1033189819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Background 1
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 129
+        width: 717
+        height: 1278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c020da6de597598409a80a2bee5b7231
+      internalID: 2028619820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remzi
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1272
+        width: 240
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea329019a11f65479dac966e2e1d577
+      internalID: 1060679729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necati Ican
+      rect:
+        serializedVersion: 2
+        x: 2505
+        y: 1275
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0eafdf575a9b9e4e92c04680de5f3fe
+      internalID: 1776526152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remz
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 887
+        width: 240
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34634b7fcee249c429c9280010e44716
+      internalID: 1939026296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_27
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 1071
+        width: 237
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968e1bce67bde9044be725345412a47b
+      internalID: -457069550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 794
+        width: 260
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63789db9ae93ef4e877f57a7f099ea0
+      internalID: -492982214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_29
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 448
+        width: 248
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d695dac7a92be49b3651d5e89369d8
+      internalID: 260467303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canan
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 420
+        width: 240
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5989c086edaeab041aad38969a5cf061
+      internalID: -1257863533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Maceraya Ba\u015Fla Button"
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 126
+        width: 502
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00af78bb42d894b42b0c0f75ce912136
+      internalID: 1285544386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -125,7 +797,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Coin 2: -1579579591
+      Platform Single 2: 546190199
+      Start Screen: 594823471
+      Remzi Ican: 1033189819
+      Game Background 1: 2028619820
+      Platform Double: 391969556
+      Atlas_18: 1768126370
+      Canan Icon: -731830827
+      "\u015Eaki": -816859319
+      Platform Single 1: 1070605614
+      Atlas_3: 1180994105
+      "Maceraya Ba\u015Fla Button": 1285544386
+      Atlas_27: -457069550
+      Atlas_2: -1839728453
+      Atlas_11: 1248836579
+      Remzi: 1060679729
+      "Kral \u015Eakir Text": -1179215039
+      Chest 2: 23518186
+      "\u015Eakir": -1864692544
+      Necati Ican: 1776526152
+      Coin 1: -661898177
+      Necat: 344278503
+      Necati: 1810698292
+      "Devler Uyand\u0131 Text": 1520749180
+      Baloon Power-Up: -1923607872
+      Remz: 1939026296
+      Atlas_29: 260467303
+      Chest 1: -1184802797
+      Game Background 2: -266615509
+      Atlas_28: -492982214
+      "\u015Eakir Icon": -820987670
+      Canan: -1257863533
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
