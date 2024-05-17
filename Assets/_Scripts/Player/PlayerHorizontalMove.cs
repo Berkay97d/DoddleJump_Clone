@@ -72,13 +72,8 @@ public class PlayerHorizontalMove : MonoBehaviour
                 
                 return;
             }
-            else
-            {
-                return;
-                
-                m_LeftInput = 0;
-                m_RightInput = 0;
-            }
+
+            return;
         }
         
         m_CanChangeInput = false;

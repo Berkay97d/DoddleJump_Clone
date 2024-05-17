@@ -9,7 +9,7 @@ public class CamFollower : MonoBehaviour
     [SerializeField] private int _deadCamMoveSize;
     [SerializeField] private float _deadMoveDuration;
 
-    private bool shouldFollow = true;
+    private bool m_ShouldFollow = true;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class CamFollower : MonoBehaviour
     
     private void LateUpdate()
     {
-        if (!shouldFollow)
+        if (!m_ShouldFollow)
         {
             return;
         }
@@ -30,7 +30,7 @@ public class CamFollower : MonoBehaviour
     
     private void OnPlayerDead()
     {
-        shouldFollow = false;
+        m_ShouldFollow = false;
         DeadMove();
     }
 

@@ -21,7 +21,6 @@ public class PlayerDeadChecker : MonoBehaviour
     {
         if (CheckIsDead() && !m_IsDead)
         {
-            Debug.Log("PLAYER DIED");
             OnPlayerDead?.Invoke();
             m_IsDead = true;
         }
