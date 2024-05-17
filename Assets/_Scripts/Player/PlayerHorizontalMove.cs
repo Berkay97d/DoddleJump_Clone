@@ -34,7 +34,6 @@ public class PlayerHorizontalMove : MonoBehaviour
     {
         m_LeftInput = 0;
         m_RightInput = 0;
-        Debug.Log("Touch Ended");
     }
 
     private void OnWorldPositionChanged(Vector2 position)
