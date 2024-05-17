@@ -4,135 +4,92 @@ using System.Collections.Generic;
 using _Scripts;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 
 public class PlayerHorizontalMove : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private DoddleButton leftButton;
-    [SerializeField] private DoddleButton rightButton;
+    [FormerlySerializedAs("speed")] [SerializeField] private float _speed;
     
-    private float leftInput = 0;
-    private float rightInput = 0;
+    private float m_LeftInput;
+    private float m_RightInput;
 
 
-    private void Start()
+    private void Awake()
     {
-        leftButton.onDown += OnLeftDown;
-        leftButton.onUp += OnLeftUp;
+        TouchInputManager.OnWorldPositionChanged += OnWorldPositionChanged;
+        TouchInputManager.OnTouchEnded += OnTouchEnded;
+    }
+
+    private void OnDestroy()
+    {
+        TouchInputManager.OnWorldPositionChanged -= OnWorldPositionChanged;
+        TouchInputManager.OnTouchEnded -= OnTouchEnded;
+    }
+    
+    
+    private void OnTouchEnded()
+    {
+        m_LeftInput = 0;
+        m_RightInput = 0;
+        Debug.Log("Touch Ended");
+    }
+
+    private void OnWorldPositionChanged(Vector2 position)
+    {
+        if (position == Vector2.zero) return;
         
-        rightButton.onDown += OnRightDown;
-        rightButton.onUp += OnRightUp;
-    }
+        Vector2 playerPos = transform.position;
+        Vector2 touchWorldPos = TouchInputManager.GetWorldPosition();
 
-    private void OnRightUp()
-    {
-        rightInput = 0;
-    }
-
-    private void OnRightDown()
-    {
-        rightInput = 1;
-    }
-
-    private void OnLeftUp()
-    {
-        leftInput = 0;
-    }
-
-    private void OnLeftDown()
-    {
-        leftInput = -1;
+        if (playerPos.x > touchWorldPos.x)
+        {
+            m_LeftInput = -1;
+            m_RightInput = 0;
+            Debug.Log("Left");
+        }
+        else if (playerPos.x < touchWorldPos.x)
+        {
+            m_RightInput = 1;
+            m_LeftInput = 0;
+            Debug.Log("Right");
+        }
     }
 
     private void Update()
     {
+        TryMove();
+    }
+
+    private bool TryMove()
+    {
+        if (Math.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) < 0.1f) return false;
+
         Move();
+        
+        return true;
     }
 
     private void Move()
     {
-        MoveKaraca();
+        float playerInput = m_LeftInput + m_RightInput;
+
+        if (playerInput == 0) return;
         
+        Vector3 position = transform.position;
+            
+        position.x += playerInput * _speed * Time.deltaTime;
+
+        PlayerProperties.Direction = playerInput switch
+        {
+            < 0 => PlayerDirection.Left,
+            > 0 => PlayerDirection.Right,
+            _ => PlayerProperties.Direction
+        };
         
-        void MoveMobile()
-        {
-            Vector3 dir = Vector3.zero;
-
-            // we assume that device is held parallel to the ground
-            // and Home button is in the right hand
-
-            // remap device acceleration axis to game coordinates:
-            //  1) XY plane of the device is mapped onto XZ plane
-            //  2) rotated 90 degrees around Y axis
-            dir.x = Input.acceleration.x;
-            //dir.z = Input.acceleration.x;
-
-            // clamp acceleration vector to unit sphere
-            if (dir.sqrMagnitude > 1)
-                dir.Normalize();
-
-            // Make it move 10 meters per second instead of 10 meters per frame...
-            dir *= Time.deltaTime;
-
-            // Handle rotation
-            if (dir.x < 0)
-            {
-                PlayerProperties.Direction = PlayerDirection.Left;
-            }
-            else if (dir.x > 0)
-            {
-                PlayerProperties.Direction = PlayerDirection.Right;
-            }
-            
-            // Move object
-            transform.Translate(dir * speed * 2);
-        }
-
-        void MovePc()
-        {
-            var position = transform.position; 
-            var playerInput = Input.GetAxis("Horizontal");
-            
-            position.x += playerInput * speed * Time.deltaTime;
-            
-            if (playerInput < 0)
-            {
-                PlayerProperties.Direction = PlayerDirection.Left;
-            }
-            else if (playerInput > 0)
-            {
-                PlayerProperties.Direction = PlayerDirection.Right;
-            }
-            
-            
-            transform.position = position;
-        }
-
-        void MoveKaraca()
-        {
-            var position = transform.position;
-            var playerInput = leftInput+rightInput;
-            
-            position.x += playerInput * speed * Time.deltaTime;
-            
-            if (playerInput < 0)
-            {
-                PlayerProperties.Direction = PlayerDirection.Left;
-            }
-            else if (playerInput > 0)
-            {
-                PlayerProperties.Direction = PlayerDirection.Right;
-            }
-            
-            
-            transform.position = position;
-        }
+        transform.position = position;
     }
-    
-    
-    
 }
 
     
