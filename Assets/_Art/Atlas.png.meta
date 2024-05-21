@@ -179,7 +179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_3
+      name: Audio Open Button
       rect:
         serializedVersion: 2
         x: 2511
@@ -347,7 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_11
+      name: Home Button
       rect:
         serializedVersion: 2
         x: 2692
@@ -494,7 +494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_18
+      name: Audio Close Button
       rect:
         serializedVersion: 2
         x: 2752
@@ -683,7 +683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_27
+      name: Counter
       rect:
         serializedVersion: 2
         x: 2534
@@ -704,7 +704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_28
+      name: Akbaba
       rect:
         serializedVersion: 2
         x: 2545
@@ -725,7 +725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_29
+      name: Baloons
       rect:
         serializedVersion: 2
         x: 2182
@@ -804,30 +804,30 @@ TextureImporter:
       Remzi Ican: 1033189819
       Game Background 1: 2028619820
       Platform Double: 391969556
-      Atlas_18: 1768126370
+      Platform Single 1: 1070605614
       Canan Icon: -731830827
       "\u015Eaki": -816859319
-      Platform Single 1: 1070605614
-      Atlas_3: 1180994105
+      Akbaba: -492982214
       "Maceraya Ba\u015Fla Button": 1285544386
-      Atlas_27: -457069550
       Atlas_2: -1839728453
-      Atlas_11: 1248836579
       Remzi: 1060679729
+      Audio Close Button: 1768126370
+      Home Button: 1248836579
       "Kral \u015Eakir Text": -1179215039
       Chest 2: 23518186
       "\u015Eakir": -1864692544
+      Baloons: 260467303
       Necati Ican: 1776526152
+      Counter: -457069550
       Coin 1: -661898177
       Necat: 344278503
       Necati: 1810698292
       "Devler Uyand\u0131 Text": 1520749180
       Baloon Power-Up: -1923607872
       Remz: 1939026296
-      Atlas_29: 260467303
       Chest 1: -1184802797
       Game Background 2: -266615509
-      Atlas_28: -492982214
+      Audio Open Button: 1180994105
       "\u015Eakir Icon": -820987670
       Canan: -1257863533
   spritePackingTag: 
