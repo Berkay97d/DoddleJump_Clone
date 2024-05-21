@@ -31,16 +31,15 @@ public class TouchInputManager : MonoBehaviour
         }
     }
 
-    private Vector2 GetTouchPosition()
+    private static Vector2 GetTouchPosition()
     {
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
+        if (Input.touchCount <= 0) return Vector2.zero;
+        
+        Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
-            {
-                return touch.position;
-            }
+        if (touch.phase is TouchPhase.Began or TouchPhase.Moved or TouchPhase.Stationary)
+        {
+            return touch.position;
         }
 
         return Vector2.zero;
@@ -48,22 +47,22 @@ public class TouchInputManager : MonoBehaviour
 
     private static Vector2 GetTouchEndPosition()
     {
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
+        if (Input.touchCount <= 0) return Vector2.zero;
+        
+        Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Ended)
-            {
-                return touch.position;
-            }
+        if (touch.phase == TouchPhase.Ended)
+        {
+            return touch.position;
         }
 
         return Vector2.zero;
     }
 
+    
     public static Vector2 GetWorldPosition()
     {
-        Vector2 touchPosition = ms_Instance.GetTouchPosition();
+        Vector2 touchPosition = GetTouchPosition();
         if (touchPosition != Vector2.zero)
         {
             return ms_Instance.m_MainCamera.ScreenToWorldPoint(new Vector2(touchPosition.x, touchPosition.y));

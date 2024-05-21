@@ -158,7 +158,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_2
+      name: Platform Double 2
       rect:
         serializedVersion: 2
         x: 2177
@@ -557,7 +557,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform Double
+      name: Platform Double 1
       rect:
         serializedVersion: 2
         x: 2526
@@ -803,13 +803,11 @@ TextureImporter:
       Start Screen: 594823471
       Remzi Ican: 1033189819
       Game Background 1: 2028619820
-      Platform Double: 391969556
       Platform Single 1: 1070605614
       Canan Icon: -731830827
       "\u015Eaki": -816859319
-      Akbaba: -492982214
       "Maceraya Ba\u015Fla Button": 1285544386
-      Atlas_2: -1839728453
+      Platform Double 1: 391969556
       Remzi: 1060679729
       Audio Close Button: 1768126370
       Home Button: 1248836579
@@ -827,9 +825,11 @@ TextureImporter:
       Remz: 1939026296
       Chest 1: -1184802797
       Game Background 2: -266615509
+      Akbaba: -492982214
       Audio Open Button: 1180994105
       "\u015Eakir Icon": -820987670
       Canan: -1257863533
+      Platform Double 2: -1839728453
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
