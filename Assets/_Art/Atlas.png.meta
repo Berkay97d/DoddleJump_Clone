@@ -3,7 +3,7 @@ guid: 62d5c42f59002b447bd9efe41b47ddff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -518,10 +525,10 @@ TextureImporter:
       name: Start Screen
       rect:
         serializedVersion: 2
-        x: 126
-        y: 126
-        width: 1084
-        height: 1924
+        x: 129
+        y: 129
+        width: 1078
+        height: 1918
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -798,41 +805,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Coin 2: -1579579591
-      Platform Single 2: 546190199
-      Start Screen: 594823471
-      Remzi Ican: 1033189819
-      Game Background 1: 2028619820
-      Platform Single 1: 1070605614
-      Canan Icon: -731830827
-      "\u015Eaki": -816859319
-      "Maceraya Ba\u015Fla Button": 1285544386
-      Platform Double 1: 391969556
-      Remzi: 1060679729
+      Akbaba: -492982214
       Audio Close Button: 1768126370
+      Audio Open Button: 1180994105
+      Baloon Power-Up: -1923607872
+      Baloons: 260467303
+      Canan: -1257863533
+      Canan Icon: -731830827
+      Chest 1: -1184802797
+      Chest 2: 23518186
+      Coin 1: -661898177
+      Coin 2: -1579579591
+      Counter: -457069550
+      "Devler Uyand\u0131 Text": 1520749180
+      Game Background 1: 2028619820
+      Game Background 2: -266615509
       Home Button: 1248836579
       "Kral \u015Eakir Text": -1179215039
-      Chest 2: 23518186
-      "\u015Eakir": -1864692544
-      Baloons: 260467303
-      Necati Ican: 1776526152
-      Counter: -457069550
-      Coin 1: -661898177
+      "Maceraya Ba\u015Fla Button": 1285544386
       Necat: 344278503
       Necati: 1810698292
-      "Devler Uyand\u0131 Text": 1520749180
-      Baloon Power-Up: -1923607872
-      Remz: 1939026296
-      Chest 1: -1184802797
-      Game Background 2: -266615509
-      Akbaba: -492982214
-      Audio Open Button: 1180994105
-      "\u015Eakir Icon": -820987670
-      Canan: -1257863533
+      Necati Ican: 1776526152
+      Platform Double 1: 391969556
       Platform Double 2: -1839728453
-  spritePackingTag: 
+      Platform Single 1: 1070605614
+      Platform Single 2: 546190199
+      Remz: 1939026296
+      Remzi: 1060679729
+      Remzi Ican: 1033189819
+      Start Screen: 594823471
+      "\u015Eaki": -816859319
+      "\u015Eakir": -1864692544
+      "\u015Eakir Icon": -820987670
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
