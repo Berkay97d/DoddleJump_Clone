@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Managers
 {
@@ -20,6 +22,19 @@ namespace Managers
 
         private void Update()
         {
+            TryUpdatePosition();
+        }
+
+        private bool TryUpdatePosition()
+        {
+            if (IsPointerOverUIObject()) return false;
+
+            UpdatePosition();
+            return true;
+        }
+
+        private static void UpdatePosition()
+        {
             Vector2 touchPosition = GetTouchPosition();
         
             Vector2 worldPosition = GetWorldPosition();
@@ -32,6 +47,16 @@ namespace Managers
                 OnTouchEnded?.Invoke();
             }
         }
+
+
+        private bool IsPointerOverUIObject() {
+            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+            return results.Count > 0;
+        }
+        
 
         private static Vector2 GetTouchPosition()
         {
