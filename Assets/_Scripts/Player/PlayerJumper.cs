@@ -7,13 +7,12 @@ namespace Player
         [Header("Values")]
         [SerializeField] private float jumpForce;
 
-        private Rigidbody2D rb;
+        private Rigidbody2D m_Rb;
     
-    
-    
+        
         private void Awake()
         {
-            rb = GetComponent<Rigidbody2D>();
+            m_Rb = GetComponent<Rigidbody2D>();
         }
 
     
@@ -24,13 +23,12 @@ namespace Player
                 return;
             }
         
-            var velocity = rb.velocity;
+            Vector2 velocity = m_Rb.velocity;
             velocity.y = force;
-            rb.velocity = velocity;
+            m_Rb.velocity = velocity;
         }
 
-    
-    
+        
         private void OnCollisionEnter2D(Collision2D col)
         {
             if (col.collider.CompareTag("Platform"))
@@ -40,12 +38,12 @@ namespace Player
         
             if (col.collider.CompareTag("Jumper"))
             {
-                Jump(jumpForce*3);
+                Jump(jumpForce * 3);
             }
 
             if (col.collider.CompareTag("Spring"))
             {
-                Jump(jumpForce*1.75f);
+                Jump(jumpForce * 1.75f);
             }
         }
     
