@@ -585,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Remzi Ican
+      name: Remzi Icon
       rect:
         serializedVersion: 2
         x: 2510
@@ -648,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Necati Ican
+      name: Necati Icon
       rect:
         serializedVersion: 2
         x: 2505
@@ -824,14 +824,14 @@ TextureImporter:
       "Kral \u015Eakir Text": -1179215039
       "Maceraya Ba\u015Fla Button": 1285544386
       Necati: 344278503
-      Necati Ican: 1776526152
+      Necati Icon: 1776526152
       Necati Jump: 1810698292
       Platform Double 1: 391969556
       Platform Double 2: -1839728453
       Platform Single 1: 1070605614
       Platform Single 2: 546190199
       Remzi: 1060679729
-      Remzi Ican: 1033189819
+      Remzi Icon: 1033189819
       Remzi Jump: 1939026296
       Start Screen: 594823471
       "\u015Eakir": -1864692544

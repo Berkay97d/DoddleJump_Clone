@@ -1,4 +1,5 @@
 ﻿using System;
+using ScriptableObjects.CharacterVisuals;
 using UnityEngine;
 
 namespace Players
@@ -16,20 +17,65 @@ namespace Players
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private Sprite _normalSprite;
         [SerializeField] private Sprite _jumpSprite;
+        
+        private CharacterVisualSO m_CharacterVisual;
 
+
+        private void Awake()
+        {
+            GameManager.OnCharacterVisualChanged += GameManagerOnCharacterVisualChanged;
+        }
 
         private void Update()
         {
+            TryUpdateVisual();
+        }
+        
+        private void OnDestroy()
+        {
+            GameManager.OnCharacterVisualChanged -= GameManagerOnCharacterVisualChanged;
+        }
+
+
+        private void GameManagerOnCharacterVisualChanged(CharacterVisualSO obj)
+        {
+            SetCharacterVisual(obj);
+            
+            _spriteRenderer.sprite = m_CharacterVisual.GetNormalSprite();
+        }
+        
+        
+        private bool TryUpdateVisual()
+        {
+            if (!m_CharacterVisual) return false;
+            
+            UpdateVisual(m_CharacterVisual.GetIsFlip());
+            return true;
+
+        }
+        
+        private void UpdateVisual(bool isFlip)
+        {
             if (_playerProperties.IsFalling())
             {
-                _spriteRenderer.sprite = _normalSprite;
-                _spriteRenderer.flipX = true;
+                _spriteRenderer.sprite = m_CharacterVisual.GetNormalSprite();
+                if (isFlip) _spriteRenderer.flipX = true;
             }
             else
             {
-                _spriteRenderer.sprite = _jumpSprite;
-                _spriteRenderer.flipX = false;
+                _spriteRenderer.sprite = m_CharacterVisual.GetJumpSprite();
+                if (isFlip) _spriteRenderer.flipX = false;
             }
+        }
+        
+        private void SetCharacterVisual(CharacterVisualSO characterVisual)
+        {
+            m_CharacterVisual = characterVisual;
+        }
+        
+        public CharacterVisualSO GetCharacterVisual()
+        {
+            return m_CharacterVisual;
         }
     }
 }

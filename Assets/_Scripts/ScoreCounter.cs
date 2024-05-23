@@ -16,6 +16,6 @@ public class ScoreCounter : MonoBehaviour
 
     private void Update()
     {
-        _scoreText.text = Mathf.Round(m_MainCamera.transform.position.y) + "m";
+        _scoreText.text = Mathf.Round(m_MainCamera.transform.position.y * 22.5f) + "m";
     }
 }
