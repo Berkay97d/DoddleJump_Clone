@@ -1,7 +1,7 @@
 using Boosts;
 using UnityEngine;
 
-namespace Player
+namespace Players
 {
     public class PlayerBoostController : MonoBehaviour
     {

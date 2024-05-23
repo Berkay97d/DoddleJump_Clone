@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Player;
+using Players;
 using UnityEngine;
 
 public class GameOverUI : MonoBehaviour

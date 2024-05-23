@@ -1,5 +1,5 @@
 using DG.Tweening;
-using Player;
+using Players;
 using UnityEngine;
 
 namespace Cameras

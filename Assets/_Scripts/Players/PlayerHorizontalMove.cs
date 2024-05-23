@@ -3,7 +3,7 @@ using Managers;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Player
+namespace Players
 {
     public class PlayerHorizontalMove : MonoBehaviour
     {

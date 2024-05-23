@@ -1,5 +1,5 @@
 ﻿using System;
-using Player;
+using Players;
 using UnityEngine;
 
 namespace _Scripts
