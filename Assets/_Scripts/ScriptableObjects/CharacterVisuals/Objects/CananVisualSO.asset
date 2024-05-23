@@ -16,3 +16,4 @@ MonoBehaviour:
   _normalSprite: {fileID: -1257863533, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
   _jumpSprite: {fileID: -1257863533, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
   _isFlip: 0
+  _isCanan: 1

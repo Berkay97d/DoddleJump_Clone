@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private static GameManager ms_Instance;
     
     private CharacterVisualSO m_CharacterVisual;
+    private bool m_CanPlay;
 
 
     private void Awake()
@@ -27,5 +28,16 @@ public class GameManager : MonoBehaviour
     public static CharacterVisualSO GetCharacterVisual()
     {
         return ms_Instance.m_CharacterVisual;
+    }
+    
+    
+    public static void SetCanPlay(bool canPlay)
+    {
+        ms_Instance.m_CanPlay = canPlay;
+    }
+    
+    public static bool GetCanPlay()
+    {
+        return ms_Instance.m_CanPlay;
     }
 }

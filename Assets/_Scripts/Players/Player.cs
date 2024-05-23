@@ -51,11 +51,11 @@ namespace Players
             
             UpdateVisual(m_CharacterVisual.GetIsFlip());
             return true;
-
         }
         
         private void UpdateVisual(bool isFlip)
         {
+            if (m_CharacterVisual.GetIsCanan()) _spriteRenderer.flipX = true;
             if (_playerProperties.IsFalling())
             {
                 _spriteRenderer.sprite = m_CharacterVisual.GetNormalSprite();

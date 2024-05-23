@@ -9,7 +9,7 @@ namespace ScriptableObjects.CharacterVisuals
         [SerializeField] private Sprite _normalSprite;
         [SerializeField] private Sprite _jumpSprite;
         [SerializeField] private bool _isFlip;
-
+        [SerializeField] private bool _isCanan;
 
         public Sprite GetIconSprite()
         {
@@ -29,6 +29,11 @@ namespace ScriptableObjects.CharacterVisuals
         public bool GetIsFlip()
         {
             return _isFlip;
+        }
+
+        public bool GetIsCanan()
+        {
+            return _isCanan;
         }
     }
 }

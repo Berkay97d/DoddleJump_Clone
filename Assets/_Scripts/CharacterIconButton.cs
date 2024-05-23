@@ -28,6 +28,7 @@ public class CharacterIconButton : MonoBehaviour
         
         CharacterVisualsParentSetActive(false);
         GameManager.SetCharacterVisual(_characterVisual);
+        GameManager.SetCanPlay(true);
     }
 
     

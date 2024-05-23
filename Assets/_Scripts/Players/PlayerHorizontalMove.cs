@@ -60,6 +60,7 @@ namespace Players
 
         private void TryMove()
         {
+            if (!GameManager.GetCanPlay()) return;
             if (Mathf.Abs(TouchInputManager.GetWorldPosition().x) < 2f)
             {
                 if (Math.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) > 0.1f)
