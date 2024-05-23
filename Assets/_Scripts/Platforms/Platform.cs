@@ -1,17 +1,18 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+namespace Platforms
 {
-    private void Update()
+    public class Platform : MonoBehaviour
     {
-        if (transform.position.y + 5.5 < PlayerProperties.Instance.transform.position.y)
+        private void Update()
         {
-            Destroy(gameObject);        
+            if (transform.position.y + 5.5 < PlayerProperties.Instance.transform.position.y)
+            {
+                Destroy(gameObject);        
+            }
         }
-    }
 
     
+    }
 }

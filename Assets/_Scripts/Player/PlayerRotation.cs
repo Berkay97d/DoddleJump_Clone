@@ -1,27 +1,29 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerRotation : MonoBehaviour
+namespace Player
 {
-    private void Update()
+    public class PlayerRotation : MonoBehaviour
     {
-        HandleRotation();
-    }
+        private void Update()
+        {
+            HandleRotation();
+        }
 
-    private void HandleRotation()
-    {
-        var rotation = transform.rotation;
+        private void HandleRotation()
+        {
+            var rotation = transform.rotation;
         
-        if (PlayerProperties.Direction == PlayerDirection.Left)
-        {
-            rotation.y = -180;
-            transform.rotation = rotation;
+            if (PlayerProperties.Direction == PlayerDirection.Left)
+            {
+                rotation.y = -180;
+                transform.rotation = rotation;
+            }
+            else
+            {
+                rotation.y = 0;
+                transform.rotation = rotation;
+            }
         }
-        else
-        {
-            rotation.y = 0;
-            transform.rotation = rotation;
-        }
+        
     }
-        
 }

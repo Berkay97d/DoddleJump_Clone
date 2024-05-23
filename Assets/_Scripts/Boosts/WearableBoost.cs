@@ -2,7 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace _Scripts.Boost
+namespace Boosts
 {
     public class WearableBoost : MonoBehaviour
     {

@@ -1,38 +1,39 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDeadChecker : MonoBehaviour
+namespace Player
 {
-    private float m_DeadGap;
-    private bool m_IsDead = false;
-
-    public static PlayerDeadChecker Instance;
-    public event Action OnPlayerDead;
-
-
-    private void Awake()
+    public class PlayerDeadChecker : MonoBehaviour
     {
-        Instance = this;
-    }
+        private float m_DeadGap;
+        private bool m_IsDead = false;
 
-    private void Update()
-    {
-        if (CheckIsDead() && !m_IsDead)
+        public static PlayerDeadChecker Instance;
+        public event Action OnPlayerDead;
+
+
+        private void Awake()
         {
-            OnPlayerDead?.Invoke();
-            m_IsDead = true;
-        }
-    }
-
-    private bool CheckIsDead()
-    {
-        if (PlayerProperties.HighestWidth - transform.position.y > 5.5)
-        {
-            return true;
+            Instance = this;
         }
 
-        return false;
+        private void Update()
+        {
+            if (CheckIsDead() && !m_IsDead)
+            {
+                OnPlayerDead?.Invoke();
+                m_IsDead = true;
+            }
+        }
+
+        private bool CheckIsDead()
+        {
+            if (PlayerProperties.HighestWidth - transform.position.y > 5.5)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }

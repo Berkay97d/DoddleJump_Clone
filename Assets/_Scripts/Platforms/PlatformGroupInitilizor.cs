@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Backgrounds;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace _Scripts.Platforms
+namespace Platforms
 {
     public class PlatformGroupInitilizor : MonoBehaviour
     {

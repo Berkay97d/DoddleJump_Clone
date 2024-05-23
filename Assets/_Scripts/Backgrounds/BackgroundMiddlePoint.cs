@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace _Scripts.Background_System
+namespace Backgrounds
 {
     public class BackgroundMiddlePoint : MonoBehaviour
     {
