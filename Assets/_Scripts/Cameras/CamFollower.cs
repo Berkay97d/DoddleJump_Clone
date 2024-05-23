@@ -6,8 +6,7 @@ namespace Cameras
 {
     public class CamFollower : MonoBehaviour
     {
-        [SerializeField] private int _deadCamMoveSize;
-        [SerializeField] private float _deadMoveDuration;
+        [SerializeField] private Transform _targetTransform;
 
         private bool m_ShouldFollow = true;
 
@@ -24,9 +23,11 @@ namespace Cameras
                 return;
             }
 
-            var position = transform.position;
-            position.y = PlayerProperties.HighestWidth;
-            transform.position = position;
+            if (_targetTransform.position.y > transform.position.y)
+            {
+                Vector3 newPos = new Vector3(transform.position.x, _targetTransform.position.y, transform.position.z);
+                transform.position = newPos;
+            }
         }
     
         

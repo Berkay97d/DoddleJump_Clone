@@ -5483,8 +5483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f7f9259a1fa1e49a94dd0d118fb703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deadCamMoveSize: 20
-  _deadMoveDuration: 1.5
+  _targetTransform: {fileID: 1595012224}
 --- !u!1001 &523363082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14585,8 +14584,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50.22
-  m_fontSizeBase: 50.22
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16313,7 +16312,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -99
   m_Sprite: {fileID: 949548214, guid: cb72bf28cd0164048837bdee6e7a10b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
