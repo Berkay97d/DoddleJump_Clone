@@ -11,6 +11,7 @@ namespace Cameras
 
         private bool m_ShouldFollow = true;
 
+        
         private void Start()
         {
             PlayerDeadChecker.Instance.OnPlayerDead += OnPlayerDead;
@@ -28,18 +29,10 @@ namespace Cameras
             transform.position = position;
         }
     
+        
         private void OnPlayerDead()
         {
             m_ShouldFollow = false;
-            DeadMove();
         }
-
-        private void DeadMove()
-        {
-            var newPos = new Vector3(transform.position.x, transform.position.y - _deadCamMoveSize, transform.position.z);
-
-            transform.DOMove(newPos, _deadMoveDuration);
-        }
-    
     }
 }
