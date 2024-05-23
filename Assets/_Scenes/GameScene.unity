@@ -14743,13 +14743,14 @@ GameObject:
   - component: {fileID: 1595012223}
   - component: {fileID: 1595012222}
   - component: {fileID: 1595012227}
-  - component: {fileID: 1595012228}
-  - component: {fileID: 1595012226}
-  - component: {fileID: 1595012225}
-  - component: {fileID: 1595012229}
-  - component: {fileID: 1595012230}
-  - component: {fileID: 1595012231}
+  - component: {fileID: 1595012233}
   - component: {fileID: 1595012232}
+  - component: {fileID: 1595012231}
+  - component: {fileID: 1595012228}
+  - component: {fileID: 1595012225}
+  - component: {fileID: 1595012226}
+  - component: {fileID: 1595012230}
+  - component: {fileID: 1595012229}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -14988,6 +14989,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _capBoostParent: {fileID: 1234877999}
   _backpackBoostParent: {fileID: 2099342893}
+--- !u!114 &1595012233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595012221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8f3f858a504f359b12a4e7a40187bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerBoostController: {fileID: 1595012232}
+  _playerDeadChecker: {fileID: 1595012231}
+  _playerHorizontalMove: {fileID: 1595012228}
+  _playerJumper: {fileID: 1595012225}
+  _playerProperties: {fileID: 1595012226}
+  _playerRotation: {fileID: 1595012230}
+  _playerTeleport: {fileID: 1595012229}
 --- !u!1 &1597291764
 GameObject:
   m_ObjectHideFlags: 0
