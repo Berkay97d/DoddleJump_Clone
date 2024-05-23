@@ -6,9 +6,11 @@ namespace Boosts
 {
     public class WearableBoost : MonoBehaviour
     {
-        [SerializeField] private Animator _boostAnimator;
         [SerializeField] private float _boostLifeTime;
         [SerializeField] private float _boostMoveSpeed;
+        [SerializeField] private GameObject _balloonActiveGameObject;
+        [SerializeField] private GameObject _balloonInActiveGameObject;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
 
         public event Action OnBoostOver;
         
@@ -25,22 +27,14 @@ namespace Boosts
                 {
                     m_isActive = false;
                     
-                    StopBoostAnimation();
+                    _balloonActiveGameObject.SetActive(m_isActive);
+                    _balloonInActiveGameObject.SetActive(!m_isActive);
+                    
                     DropToDown();
                     
                     OnBoostOver?.Invoke();
                 }
             }
-        }
-
-        private void StartBoostAnimation()
-        {
-            _boostAnimator.SetBool("isUsing", true);   
-        }
-
-        private void StopBoostAnimation()
-        {
-            _boostAnimator.SetBool("isUsing", false);
         }
 
         private void DropToDown()
@@ -60,7 +54,8 @@ namespace Boosts
 
             m_isActive = true;
             
-            StartBoostAnimation();
+            _balloonActiveGameObject.SetActive(m_isActive);
+            _balloonInActiveGameObject.SetActive(!m_isActive);
         }
 
         public float GetBoostMoveSpeed()
