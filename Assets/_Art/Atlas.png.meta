@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Necati
+      name: Necati Jump
       rect:
         serializedVersion: 2
         x: 123
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Necat
+      name: Necati
       rect:
         serializedVersion: 2
         x: 2175
@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u015Eaki"
+      name: "\u015Eakir Jump"
       rect:
         serializedVersion: 2
         x: 2161
@@ -669,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Remz
+      name: Remzi Jump
       rect:
         serializedVersion: 2
         x: 2180
@@ -823,20 +823,20 @@ TextureImporter:
       Home Button: 1248836579
       "Kral \u015Eakir Text": -1179215039
       "Maceraya Ba\u015Fla Button": 1285544386
-      Necat: 344278503
-      Necati: 1810698292
+      Necati: 344278503
       Necati Ican: 1776526152
+      Necati Jump: 1810698292
       Platform Double 1: 391969556
       Platform Double 2: -1839728453
       Platform Single 1: 1070605614
       Platform Single 2: 546190199
-      Remz: 1939026296
       Remzi: 1060679729
       Remzi Ican: 1033189819
+      Remzi Jump: 1939026296
       Start Screen: 594823471
-      "\u015Eaki": -816859319
       "\u015Eakir": -1864692544
       "\u015Eakir Icon": -820987670
+      "\u015Eakir Jump": -816859319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
