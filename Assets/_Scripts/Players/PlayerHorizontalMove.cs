@@ -87,7 +87,7 @@ namespace Players
 
             PlayerProperties.Direction = playerInput switch
             {
-                < 0 => PlayerDirection.Left,
+                < 0 => PlayerDirection.Left, 
                 > 0 => PlayerDirection.Right,
                 _ => PlayerProperties.Direction
             };
