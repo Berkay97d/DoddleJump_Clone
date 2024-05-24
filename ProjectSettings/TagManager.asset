@@ -10,6 +10,7 @@ TagManager:
   - Spring
   - Cap
   - Rocket
+  - Obstacle
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ namespace Players
         [SerializeField] private Transform _capBoostParent;
         [SerializeField] private Transform _backpackBoostParent;
 
-        private bool m_İsBoosted;
+        private bool m_IsBoosted;
         private WearableBoost m_WearableBoost;
         private Rigidbody2D m_Rb;
 
@@ -20,7 +20,7 @@ namespace Players
 
         private void Update()
         {
-            if (m_İsBoosted)
+            if (m_IsBoosted)
             {
                 m_Rb.velocity = Vector2.zero;
                 transform.position += Vector3.up * m_WearableBoost.GetBoostMoveSpeed() * Time.deltaTime;
@@ -30,7 +30,7 @@ namespace Players
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (m_İsBoosted) return;
+            if (m_IsBoosted) return;
 
             if (col.CompareTag("Cap") && col.gameObject.TryGetComponent(out WearableBoost wearableBoostCap))
             {
@@ -40,7 +40,7 @@ namespace Players
             
                 wearableBoostCap.OnBoostOver += OnBoostOver;
 
-                m_İsBoosted = true;
+                m_IsBoosted = true;
             }
 
             if (col.CompareTag("Rocket") && col.gameObject.TryGetComponent(out WearableBoost wearableBoostRocket))
@@ -51,17 +51,23 @@ namespace Players
           
                 wearableBoostRocket.OnBoostOver += OnBoostOver;
           
-                m_İsBoosted = true;
+                m_IsBoosted = true;
             }
         }
    
 
         private void OnBoostOver()
         {
-            m_İsBoosted = false;
+            m_IsBoosted = false;
             m_WearableBoost.OnBoostOver -= OnBoostOver;
        
             m_Rb.velocity = Vector2.up * 7;
+        }
+        
+        
+        public bool GetIsBoosted()
+        {
+            return m_IsBoosted;
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Players
@@ -6,8 +7,11 @@ namespace Players
     {
         [Header("Values")]
         [SerializeField] private float jumpForce;
+        
+        public static event Action<float> OnJump; 
 
         private Rigidbody2D m_Rb;
+        private float m_jumpForce;
     
         
         private void Awake()
@@ -31,23 +35,34 @@ namespace Players
         
         private void OnCollisionEnter2D(Collision2D col)
         {
+             // if (m_jumpForce > 12) return;
+            
             if (col.collider.CompareTag("Platform"))
             {
                 Jump(jumpForce);
+                m_jumpForce = jumpForce;
+                OnJump?.Invoke(m_jumpForce);
+                
+                return;
             }
         
             if (col.collider.CompareTag("Jumper"))
             {
                 Jump(jumpForce * 3);
+                m_jumpForce = jumpForce * 3;
+                OnJump?.Invoke(m_jumpForce);
+                
+                return;
             }
 
             if (col.collider.CompareTag("Spring"))
             {
                 Jump(jumpForce * 1.75f);
+                m_jumpForce = jumpForce * 1.75f;
+                OnJump?.Invoke(m_jumpForce);
+                
+                return;
             }
         }
-    
-    
-    
     }
 }

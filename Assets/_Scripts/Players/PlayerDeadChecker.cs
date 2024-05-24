@@ -21,11 +21,10 @@ namespace Players
         {
             if (CheckIsDead() && !m_IsDead)
             {
-                OnPlayerDead?.Invoke();
-                m_IsDead = true;
+                OnPlayerDeadInvoke();
             }
         }
-
+        
         private bool CheckIsDead()
         {
             if (PlayerProperties.HighestWidth - transform.position.y > 5.5)
@@ -34,6 +33,15 @@ namespace Players
             }
 
             return false;
+        }
+        
+        
+        public void OnPlayerDeadInvoke()
+        {
+            OnPlayerDead?.Invoke();
+            m_IsDead = true;
+            
+            gameObject.SetActive(false);
         }
     }
 }
