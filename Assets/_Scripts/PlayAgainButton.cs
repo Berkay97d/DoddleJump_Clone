@@ -7,14 +7,20 @@ using UnityEngine.UI;
 
 public class PlayAgainButton : MonoBehaviour
 {
-     private Button m_Button;
+     [SerializeField] private Button _button;
 
 
-     private void Start()
+     private void Awake()
      {
-          m_Button = GetComponent<Button>();
-          
-          m_Button.onClick.AddListener(() =>
+          _button.onClick.AddListener(() =>
+          {
+               SceneManager.LoadScene(0);
+          });
+     }
+
+     private void OnDestroy()
+     {
+          _button.onClick.RemoveListener(() =>
           {
                SceneManager.LoadScene(0);
           });

@@ -11,14 +11,11 @@ public class GameOverUI : MonoBehaviour
     
     private void Start()
     {
-        PlayerDeadChecker.Instance.OnPlayerDead += OnPlayeDead;
+        PlayerDeadChecker.Instance.OnPlayerDead += OnPlayerDead;
     }
 
-    private void OnPlayeDead()
+    private void OnPlayerDead()
     {
-        var newPos = new Vector3(transform.position.x, PlayerProperties.HighestWidth - 20, transform.position.z);
-        _mainTransform.position = newPos;
-        
         _mainTransform.gameObject.SetActive(true);
     }
 }
