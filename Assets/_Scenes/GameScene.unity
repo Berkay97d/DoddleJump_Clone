@@ -14288,6 +14288,7 @@ GameObject:
   - component: {fileID: 1347586808}
   - component: {fileID: 1347586810}
   - component: {fileID: 1347586811}
+  - component: {fileID: 1347586812}
   m_Layer: 0
   m_Name: Audio Button
   m_TagString: Untagged
@@ -14398,7 +14399,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 1768126370, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -14410,6 +14411,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1347586812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347586806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa32ee2474f4b62a55e0ffb5326ee7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioButton: {fileID: 1347586811}
+  _audioImage: {fileID: 1347586808}
+  _audioActiveSprite: {fileID: 1180994105, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  _audioInactiveSprite: {fileID: 1768126370, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
 --- !u!1 &1348794650
 GameObject:
   m_ObjectHideFlags: 0

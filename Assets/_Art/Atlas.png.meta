@@ -189,10 +189,10 @@ TextureImporter:
       name: Audio Open Button
       rect:
         serializedVersion: 2
-        x: 2511
-        y: 2694
-        width: 70
-        height: 65
+        x: 2514
+        y: 2696
+        width: 65
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,9 +504,9 @@ TextureImporter:
       name: Audio Close Button
       rect:
         serializedVersion: 2
-        x: 2752
+        x: 2755
         y: 2067
-        width: 70
+        width: 68
         height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
