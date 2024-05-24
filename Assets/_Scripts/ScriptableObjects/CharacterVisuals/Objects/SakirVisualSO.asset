@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SakirVisualSO
   m_EditorClassIdentifier: 
   _iconSprite: {fileID: -820987670, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
-  _normalSprite: {fileID: -1864692544, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  _normalSprite: {fileID: -343035609, guid: 2429a37e58233eb4ea674e72dd44bad4, type: 3}
   _jumpSprite: {fileID: -816859319, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
   _isFlip: 0
+  _isCanan: 0

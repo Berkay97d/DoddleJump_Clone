@@ -711,13 +711,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Akbaba
+      name: Akbaba Down
       rect:
         serializedVersion: 2
         x: 2545
         y: 794
-        width: 260
-        height: 162
+        width: 263
+        height: 164
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -805,7 +805,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Akbaba: -492982214
+      Akbaba Down: -492982214
       Audio Close Button: 1768126370
       Audio Open Button: 1180994105
       Baloon Power-Up: -1923607872
