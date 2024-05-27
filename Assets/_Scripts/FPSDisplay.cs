@@ -14,6 +14,23 @@ public class FPSDisplay : MonoBehaviour
     {
         m_DeltaTime += (Time.unscaledDeltaTime - m_DeltaTime) * 0.1f;
         float fps = 1.0f / m_DeltaTime;
-        _fpsText.text = "FPS " + Mathf.Round(fps);
+        _fpsText.text = "FPS: " + Mathf.Round(fps);
+        
+        
+        switch (fps)
+        {
+            case >= 60:
+                _fpsText.color = Color.green;
+                break;
+            case <= 30:
+                _fpsText.color = Color.red;
+                break;
+            default:
+            {
+                float t = (fps - 30) / 30.0f;
+                _fpsText.color = Color.Lerp(Color.red, Color.green, t);
+                break;
+            }
+        }
     }
 }
