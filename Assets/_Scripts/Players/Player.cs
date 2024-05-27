@@ -13,6 +13,7 @@ namespace Players
         [SerializeField] private PlayerProperties _playerProperties;
         [SerializeField] private PlayerRotation _playerRotation;
         [SerializeField] private PlayerTeleport _playerTeleport;
+        [SerializeField] private Rigidbody2D _rigidbody;
         
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private Sprite _normalSprite;
@@ -76,6 +77,11 @@ namespace Players
         public CharacterVisualSO GetCharacterVisual()
         {
             return m_CharacterVisual;
+        }
+        
+        public Rigidbody2D GetRigidbody()
+        {
+            return _rigidbody;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Players
         [SerializeField] private PlayerBoostController _playerBoostController;
         [SerializeField] private PlayerDeadChecker _playerDeadChecker;
         [SerializeField] private PlayerJumper _playerJumper;
+        [SerializeField] private Player _player;
 
         private float m_LastJumpForce = 12f;
 
@@ -32,7 +33,7 @@ namespace Players
         {
             if (!other.CompareTag("Obstacle")) return;
             if (_playerBoostController.GetIsBoosted()) return;
-            if (m_LastJumpForce > 12) return;
+            if (_player.GetRigidbody().velocity.y > 10) return;
                 
             _playerDeadChecker.OnPlayerDeadInvoke();
         }

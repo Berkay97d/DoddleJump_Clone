@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 
@@ -16,6 +17,6 @@ public class ScoreCounter : MonoBehaviour
 
     private void Update()
     {
-        _scoreText.text = Mathf.Round(m_MainCamera.transform.position.y * 22.5f) + "m";
+        _scoreText.text = Mathf.Round(m_MainCamera.transform.position.y * 22.5f).ToString(CultureInfo.InvariantCulture);
     }
 }
