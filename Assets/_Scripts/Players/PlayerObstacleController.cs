@@ -25,8 +25,6 @@ namespace Players
         private void OnJump(float force)
         {
             m_LastJumpForce = force;
-            
-            Debug.Log(m_LastJumpForce);
         }
         
 

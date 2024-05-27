@@ -30,6 +30,8 @@ namespace Players
             Vector2 velocity = m_Rb.velocity;
             velocity.y = force;
             m_Rb.velocity = velocity;
+            
+            OnJump?.Invoke(force);
         }
 
         
@@ -41,7 +43,6 @@ namespace Players
             {
                 Jump(jumpForce);
                 m_jumpForce = jumpForce;
-                OnJump?.Invoke(m_jumpForce);
                 
                 return;
             }
@@ -50,7 +51,6 @@ namespace Players
             {
                 Jump(jumpForce * 3);
                 m_jumpForce = jumpForce * 3;
-                OnJump?.Invoke(m_jumpForce);
                 
                 return;
             }
@@ -59,7 +59,6 @@ namespace Players
             {
                 Jump(jumpForce * 1.75f);
                 m_jumpForce = jumpForce * 1.75f;
-                OnJump?.Invoke(m_jumpForce);
                 
                 return;
             }
