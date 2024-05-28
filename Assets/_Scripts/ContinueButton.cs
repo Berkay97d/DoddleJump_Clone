@@ -1,4 +1,5 @@
 ﻿using System;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,6 +23,8 @@ public class ContinueButton : MonoBehaviour
     private void OnClicked()
     {
         PauseScreenSetActive(false);
+        
+        AudioManager.PlayButtonClickSound();
     }
 
     private void PauseScreenSetActive(bool active)

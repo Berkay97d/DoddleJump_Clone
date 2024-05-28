@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Managers;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class CloseButton : MonoBehaviour
@@ -21,6 +22,8 @@ public class CloseButton : MonoBehaviour
     private void OnClicked()
     {
         PauseScreenSetActive(false);
+        
+        AudioManager.PlayButtonClickSound();
     }
     
     private void PauseScreenSetActive(bool active)

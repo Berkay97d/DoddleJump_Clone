@@ -1,4 +1,5 @@
 ﻿using System;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,6 +23,8 @@ public class HomeButton : MonoBehaviour
     private void OnClicked()
     {
         PauseScreenSetActive(!GetPauseScreenActiveSelf());
+        
+        AudioManager.PlayButtonClickSound();
     }
 
     

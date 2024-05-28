@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,17 +13,19 @@ public class PlayAgainButton : MonoBehaviour
 
      private void Awake()
      {
-          _button.onClick.AddListener(() =>
-          {
-               SceneManager.LoadScene(0);
-          });
+          _button.onClick.AddListener(OnClicked);
      }
-
+     
      private void OnDestroy()
      {
-          _button.onClick.RemoveListener(() =>
-          {
-               SceneManager.LoadScene(0);
-          });
+          _button.onClick.RemoveListener(OnClicked);
+     }
+     
+     
+     private static void OnClicked()
+     {
+          AudioManager.PlayButtonClickSound();
+
+          SceneManager.LoadScene(0);
      }
 }
