@@ -1,4 +1,5 @@
-﻿using Managers;
+﻿using DG.Tweening;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ public class ClosePopUpButton : MonoBehaviour
 {
     [SerializeField] private Button _closeButton;
     [SerializeField] private Transform _popUpMainTransform;
+    [SerializeField] private Transform _outScreenTransform;
     
     
     private void Awake()
@@ -21,14 +23,14 @@ public class ClosePopUpButton : MonoBehaviour
     
     private void OnClicked()
     {
-        PopUpMainSetActive(false);
+        PopUpMainSetActive();
         
         AudioManager.PlayButtonClickSound();
     }
     
     
-    private void PopUpMainSetActive(bool active)
+    private void PopUpMainSetActive()
     {
-        _popUpMainTransform.gameObject.SetActive(active);
+        _popUpMainTransform.DOMoveY(_outScreenTransform.position.y, 0.5f).SetEase(Ease.OutBounce);
     }
 }

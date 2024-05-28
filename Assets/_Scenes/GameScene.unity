@@ -20189,6 +20189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _closeButton: {fileID: 1057299590}
   _popUpMainTransform: {fileID: 673397735}
+  _outScreenTransform: {fileID: 1013566058}
 --- !u!1001 &1057379876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27113,7 +27114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _popUpMainTransform: {fileID: 673397735}
-  _scoreToPopUp: 500
+  _scoreToPopUp: 10000
   _popUpDuration: 7.5
   _inScreenTransform: {fileID: 995044040}
   _outScreenTransform: {fileID: 1013566058}
@@ -36030,7 +36031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1910673221
 Transform:
   m_ObjectHideFlags: 0
