@@ -2269,6 +2269,8 @@ MonoBehaviour:
   _characterVisualsParent: {fileID: 1307760830}
   _characterVisual: {fileID: 11400000, guid: e83b08b4173ef454bafbe9aed6b0e6ff, type: 2}
   _button: {fileID: 121917634}
+  _fadeDuration: 0.5
+  _fadeCanvasGroup: {fileID: 659098621}
 --- !u!1 &128682006
 GameObject:
   m_ObjectHideFlags: 0
@@ -12573,6 +12575,7 @@ GameObject:
   - component: {fileID: 659098620}
   - component: {fileID: 659098619}
   - component: {fileID: 659098618}
+  - component: {fileID: 659098621}
   m_Layer: 0
   m_Name: Select Character Screen Canvas
   m_TagString: Untagged
@@ -12663,6 +12666,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
+--- !u!225 &659098621
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659098616}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &661221649
 GameObject:
   m_ObjectHideFlags: 0
@@ -17478,6 +17493,8 @@ MonoBehaviour:
   _characterVisualsParent: {fileID: 1307760830}
   _characterVisual: {fileID: 11400000, guid: 8b6f28293e67e414f9713b6afd0fa1d0, type: 2}
   _button: {fileID: 937396632}
+  _fadeDuration: 0.5
+  _fadeCanvasGroup: {fileID: 659098621}
 --- !u!1001 &946787549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19195,6 +19212,8 @@ MonoBehaviour:
   _characterVisualsParent: {fileID: 1307760830}
   _characterVisual: {fileID: 11400000, guid: ff9dcc071454b65408ee65e272d2d83d, type: 2}
   _button: {fileID: 1017629958}
+  _fadeDuration: 0.5
+  _fadeCanvasGroup: {fileID: 659098621}
 --- !u!1001 &1018249314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30961,6 +30980,8 @@ MonoBehaviour:
   _characterVisualsParent: {fileID: 1307760830}
   _characterVisual: {fileID: 11400000, guid: d25ba38dd0fcec641b16367371edef94, type: 2}
   _button: {fileID: 1636715895}
+  _fadeDuration: 0.5
+  _fadeCanvasGroup: {fileID: 659098621}
 --- !u!1001 &1636808724
 PrefabInstance:
   m_ObjectHideFlags: 0
