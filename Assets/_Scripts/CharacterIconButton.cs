@@ -32,13 +32,14 @@ public class CharacterIconButton : MonoBehaviour
 
     private async UniTask FadeOutAndDisable()
     {
-        await FadeOut();
 
         CharacterVisualsParentSetActive(false);
         GameManager.SetCharacterVisual(_characterVisual);
         GameManager.SetCanPlay(true);
 
         AudioManager.PlayButtonClickSound();
+        
+        await FadeOut();
     }
 
     private async UniTask FadeOut()
