@@ -26,10 +26,10 @@ namespace Boosts
                 if (m_activePastTime > _boostLifeTime)
                 {
                     m_isActive = false;
-                    
-                    _balloonActiveGameObject.SetActive(m_isActive);
-                    _balloonInActiveGameObject.SetActive(!m_isActive);
-                    
+
+                    if (_balloonActiveGameObject != null) _balloonActiveGameObject.SetActive(m_isActive);
+                    if (_balloonInActiveGameObject != null) _balloonInActiveGameObject.SetActive(!m_isActive);
+
                     DropToDown();
                     
                     OnBoostOver?.Invoke();
@@ -53,9 +53,9 @@ namespace Boosts
             transform.localPosition = Vector3.zero;
 
             m_isActive = true;
-            
-            _balloonActiveGameObject.SetActive(m_isActive);
-            _balloonInActiveGameObject.SetActive(!m_isActive);
+
+            if (_balloonActiveGameObject != null) _balloonActiveGameObject.SetActive(m_isActive);
+            if (_balloonInActiveGameObject != null) _balloonInActiveGameObject.SetActive(!m_isActive);
         }
 
         public float GetBoostMoveSpeed()
