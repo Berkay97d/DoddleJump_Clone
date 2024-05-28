@@ -1,4 +1,5 @@
 ﻿using System;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,6 +29,7 @@ public class AudioButton : MonoBehaviour
         AudioListener.volume = Math.Abs(volume - 1) < 0.1f ? 0 : 1;
         
         UpdateAudioImage(volume);
+        AudioManager.PlayButtonClickSound();
     }
 
     

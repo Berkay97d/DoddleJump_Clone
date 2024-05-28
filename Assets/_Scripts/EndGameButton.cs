@@ -1,4 +1,5 @@
 ﻿using System;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,8 @@ public class EndGameButton : MonoBehaviour
     private void OnClicked()
     {
         Debug.Log("End Game!");
+        
+        AudioManager.PlayButtonClickSound();
         Application.Quit();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Managers;
 using ScriptableObjects.CharacterVisuals;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -29,6 +30,8 @@ public class CharacterIconButton : MonoBehaviour
         CharacterVisualsParentSetActive(false);
         GameManager.SetCharacterVisual(_characterVisual);
         GameManager.SetCanPlay(true);
+        
+        AudioManager.PlayButtonClickSound();
     }
 
     
