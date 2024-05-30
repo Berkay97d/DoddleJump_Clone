@@ -63,7 +63,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.008168131, y: 0}
@@ -190,10 +190,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _chest: {fileID: 9151725467037087616}
-  _spriteRenderer: {fileID: 0}
-  _normalChestSprite: {fileID: 0}
+  _spriteRenderer: {fileID: 105693605356193037}
+  _normalChestSprite: {fileID: -1184802797, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
   _damageChestSprite: {fileID: 23518186, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
-  _damageDisplayDuration: 0.5
+  _damageDisplayDuration: 0.125
 --- !u!1 &8204293924457283372
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,3 +241,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chestCollisionController: {fileID: 2723549324934415257}
   _chestVisualController: {fileID: 2179037288598369565}
+  _health: 3

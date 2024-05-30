@@ -20,13 +20,19 @@ namespace Players
         }
 
     
-        private void Jump(float force)
+        private void TryJump(float force)
         {
             if (!PlayerProperties.Instance.IsFalling())
             {
                 return;
             }
+
+            Jump(force);
+        }
+
         
+        public void Jump(float force)
+        {
             Vector2 velocity = m_Rb.velocity;
             velocity.y = force;
             m_Rb.velocity = velocity;
@@ -34,14 +40,14 @@ namespace Players
             OnJump?.Invoke(force);
         }
 
-        
+
         private void OnCollisionEnter2D(Collision2D col)
         {
              // if (m_jumpForce > 12) return;
             
             if (col.collider.CompareTag("Platform"))
             {
-                Jump(jumpForce);
+                TryJump(jumpForce);
                 m_jumpForce = jumpForce;
                 
                 return;
@@ -49,7 +55,7 @@ namespace Players
         
             if (col.collider.CompareTag("Jumper"))
             {
-                Jump(jumpForce * 3);
+                TryJump(jumpForce * 3);
                 m_jumpForce = jumpForce * 3;
                 
                 return;
@@ -57,7 +63,7 @@ namespace Players
 
             if (col.collider.CompareTag("Spring"))
             {
-                Jump(jumpForce * 1.75f);
+                TryJump(jumpForce * 1.75f);
                 m_jumpForce = jumpForce * 1.75f;
                 
                 return;

@@ -83,5 +83,10 @@ namespace Players
         {
             return _rigidbody;
         }
+
+        public PlayerJumper GetJumper()
+        {
+            return _playerJumper;
+        }
     }
 }

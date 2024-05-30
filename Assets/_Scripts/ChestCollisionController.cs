@@ -7,6 +7,6 @@ public class ChestCollisionController : MonoBehaviour
     
     public Chest GetChest()
     {
-        return _chest;
+        return _chest ? _chest : null;
     }
 }

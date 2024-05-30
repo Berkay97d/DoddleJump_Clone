@@ -2,6 +2,7 @@
 using System.Threading;
 using UnityEngine;
 using Cysharp.Threading.Tasks;
+using NaughtyAttributes;
 
 public class ChestVisualController : MonoBehaviour
 {
@@ -13,7 +14,24 @@ public class ChestVisualController : MonoBehaviour
 
     private CancellationTokenSource m_CancellationTokenSource;
 
+
+    private void Awake()
+    {
+        _chest.OnHealthChanged += OnHealthChanged;
+    }
+
+    private void OnDestroy()
+    {
+        _chest.OnHealthChanged -= OnHealthChanged;
+    }
     
+    
+    private void OnHealthChanged()
+    {
+        ShowDamageSprite();
+    }
+
+
     private async UniTaskVoid DisplayDamageSpriteAsync(CancellationToken token)
     {
         SetSprite(_damageChestSprite);
@@ -30,15 +48,16 @@ public class ChestVisualController : MonoBehaviour
     
     private void SetSprite(Sprite sprite)
     {
-        _spriteRenderer.sprite = sprite;
+        if (_spriteRenderer) _spriteRenderer.sprite = sprite;
     }
     
     
     public Chest GetChest()
     {
-        return _chest;
+        return _chest ? _chest : null;
     }
     
+    [Button]
     public void ShowDamageSprite()
     {
         m_CancellationTokenSource?.Cancel();
