@@ -13,12 +13,12 @@ namespace Publish
             if (target is not UnityEditor.BuildTarget.WebGL) return;
 
             var imagePath = Path.Join(Application.dataPath, "Publish/logo.png");
-            var imageTargetPath = Path.Join(Directory.GetParent(Application.dataPath)?.FullName, "karacabuild/WebGL/TemplateData/unity-logo-dark.png");
+            var imageTargetPath = Path.Join(Directory.GetParent(Application.dataPath)?.FullName, "KaracaBuild/WebGL/TemplateData/unity-logo-dark.png");
             
             File.Copy(imagePath, imageTargetPath, true);
             
             var styleSheetPath = Path.Join(Application.dataPath, "Publish/style.css");
-            var styleSheetTargetPath = Path.Join(Directory.GetParent(Application.dataPath)?.FullName, "karacabuild/WebGL/TemplateData/style.css");
+            var styleSheetTargetPath = Path.Join(Directory.GetParent(Application.dataPath)?.FullName, "KaracaBuild/WebGL/TemplateData/style.css");
             
             File.Copy(styleSheetPath, styleSheetTargetPath, true);
         }
