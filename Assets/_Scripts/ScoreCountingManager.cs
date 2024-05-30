@@ -16,16 +16,7 @@ public class ScoreCountingManager : MonoBehaviour
 
     private void Awake()
     {
-        if (ms_Instance == null)
-        {
-            ms_Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
+        ms_Instance = this;
         m_MainCamera = Camera.main;
     }
 

@@ -12,6 +12,7 @@ TagManager:
   - Rocket
   - Obstacle
   - Chest
+  - Coin
   layers:
   - Default
   - TransparentFX
