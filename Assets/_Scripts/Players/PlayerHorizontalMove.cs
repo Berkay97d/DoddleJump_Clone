@@ -61,22 +61,25 @@ namespace Players
         private void TryMove()
         {
             if (!GameManager.GetCanPlay()) return;
-            if (Mathf.Abs(TouchInputManager.GetWorldPosition().x) < 2f)
+
+            float normalizedX = TouchInputManager.GetWorldPosition().x / (Screen.width / 2f);
+
+            if (Mathf.Abs(normalizedX) < 1f)
             {
-                if (Math.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) > 0.1f)
+                if (Mathf.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) > 0.1f)
                 {
                     Move();
                     m_CanChangeInput = true;
-                
                     return;
                 }
-
+                
                 return;
             }
-        
+
             m_CanChangeInput = false;
             Move();
         }
+
 
         private void Move()
         {
