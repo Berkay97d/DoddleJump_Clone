@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1826515377288854108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Vulture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2280195762436179054}
   - component: {fileID: 7065830011301201983}
   - component: {fileID: 349956028596798642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8038241791448809509}
   - component: {fileID: 8401593480935957204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3125162749587354666}
   - component: {fileID: 824404133233538353}
   - component: {fileID: 2723549324934415257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collision
   m_TagString: Chest
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 3041018697541711088}
   - component: {fileID: 105693605356193037}
   - component: {fileID: 2179037288598369565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6409269548481639182}
   - component: {fileID: 9151725467037087616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}

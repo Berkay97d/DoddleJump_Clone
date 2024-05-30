@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7543564367760905719}
   - component: {fileID: 7321249238687257288}
   - component: {fileID: 8118662593333963282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5134968620816391481}
   - component: {fileID: 1417890055000200192}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 7697771856493611894}
   - component: {fileID: 7137355624627209810}
   - component: {fileID: 7276049949510015411}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision
   m_TagString: Coin
   m_Icon: {fileID: 0}
