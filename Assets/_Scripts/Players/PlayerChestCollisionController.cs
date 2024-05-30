@@ -26,6 +26,8 @@ namespace Players
             
             const int damage = -1;
             chestCollisionController.GetChest().AddHealth(damage);
+            
+            ScoreCountingManager.AddScore(250);
         }
 
 

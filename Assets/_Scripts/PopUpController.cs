@@ -15,12 +15,12 @@ public class PopUpController : MonoBehaviour
 
     private void Awake()
     {
-        ScoreCounter.OnScoreChanged += OnScoreChanged;
+        ScoreCountingManager.OnScoreChanged += OnScoreChanged;
     }
 
     private void OnDestroy()
     {
-        ScoreCounter.OnScoreChanged -= OnScoreChanged;
+        ScoreCountingManager.OnScoreChanged -= OnScoreChanged;
     }
 
     
