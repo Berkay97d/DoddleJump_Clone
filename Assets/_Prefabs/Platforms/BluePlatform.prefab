@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5227334104246873298}
   - component: {fileID: 5227334104246873299}
   - component: {fileID: 7298398648319646460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform
   m_TagString: Platform
   m_Icon: {fileID: 0}

@@ -88,5 +88,10 @@ namespace Players
         {
             return _playerJumper;
         }
+        
+        public PlayerBoostController GetPlayerBoostController()
+        {
+            return _playerBoostController;
+        }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7363053618505936307}
   - component: {fileID: 7363053618505936306}
   - component: {fileID: 1075290552412068435}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenSpringPlatform
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 1808279709351420402}
   - component: {fileID: 4211716277529583258}
   - component: {fileID: 4211716277529583259}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SpringPlatform
   m_TagString: Spring
   m_Icon: {fileID: 0}

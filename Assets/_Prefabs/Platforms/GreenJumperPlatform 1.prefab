@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6084124335336951463}
   - component: {fileID: 6084124335336951462}
   - component: {fileID: 5224274242292279268}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenJumperPlatform 1
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 3123730440000815846}
   - component: {fileID: 590799739407269262}
   - component: {fileID: 590799739407269263}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: JumperPlatform
   m_TagString: Jumper
   m_Icon: {fileID: 0}

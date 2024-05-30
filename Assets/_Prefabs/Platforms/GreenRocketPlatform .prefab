@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3708443359369390757}
   - component: {fileID: 3708443359369390756}
   - component: {fileID: 3429621894586958822}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'GreenRocketPlatform '
   m_TagString: Platform
   m_Icon: {fileID: 0}

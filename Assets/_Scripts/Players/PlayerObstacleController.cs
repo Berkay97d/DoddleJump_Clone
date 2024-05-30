@@ -33,7 +33,7 @@ namespace Players
         {
             if (!other.CompareTag("Obstacle")) return;
             if (_playerBoostController.GetIsBoosted()) return;
-            if (_player.GetRigidbody().velocity.y > 10) return;
+            if (_player.GetRigidbody().velocity.y > 11) return;
                 
             _playerDeadChecker.OnPlayerDeadInvoke();
         }

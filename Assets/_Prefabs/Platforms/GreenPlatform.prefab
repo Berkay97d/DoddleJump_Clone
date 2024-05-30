@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 163073870282649407}
   - component: {fileID: 163073870282649406}
   - component: {fileID: 5152874232657927630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform
   m_TagString: Platform
   m_Icon: {fileID: 0}
