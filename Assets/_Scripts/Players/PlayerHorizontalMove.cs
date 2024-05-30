@@ -63,8 +63,8 @@ namespace Players
             if (!GameManager.GetCanPlay()) return;
 
             float normalizedX = TouchInputManager.GetWorldPosition().x / (Screen.width / 2f);
-
-            if (Mathf.Abs(normalizedX) < 1f)
+            
+            if (Mathf.Abs(normalizedX) < 0.003f)
             {
                 if (Mathf.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) > 0.1f)
                 {
