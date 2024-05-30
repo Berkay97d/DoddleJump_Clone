@@ -11,6 +11,7 @@ TagManager:
   - Cap
   - Rocket
   - Obstacle
+  - Chest
   layers:
   - Default
   - TransparentFX
