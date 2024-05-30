@@ -20,6 +20,11 @@ public class ScoreCountingManager : MonoBehaviour
         m_MainCamera = Camera.main;
     }
 
+    private void Start()
+    {
+        UpdateScoreText();
+    }
+
     private void Update()
     {
         Vector3 cameraPosition = m_MainCamera.transform.position;

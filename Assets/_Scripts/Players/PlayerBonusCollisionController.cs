@@ -3,12 +3,27 @@ using UnityEngine;
 
 namespace Players
 {
-    public class PlayerChestCollisionController : MonoBehaviour
+    public class PlayerBonusCollisionController : MonoBehaviour
     {
         [SerializeField] private Player _player;
 
 
         private void OnTriggerEnter2D(Collider2D other)
+        {
+            TryChest(other);
+            TryCoin(other);
+        }
+
+        private void TryCoin(Collider2D other)
+        {
+            if (!other.TryGetComponent(out CoinCollisionController coinCollisionController)) return;
+            
+            coinCollisionController.GetCoin().DestroySelf();
+
+            ScoreCountingManager.AddScore(100);
+        }
+
+        private void TryChest(Collider2D other)
         {
             if (!other.TryGetComponent(out ChestCollisionController chestCollisionController)) return;
 
