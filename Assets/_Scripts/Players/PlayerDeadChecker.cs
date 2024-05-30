@@ -5,12 +5,10 @@ namespace Players
 {
     public class PlayerDeadChecker : MonoBehaviour
     {
-        private float m_DeadGap;
         private bool m_IsDead = false;
 
         public static PlayerDeadChecker Instance;
         public event Action OnPlayerDead;
-
 
         private void Awake()
         {
@@ -24,23 +22,21 @@ namespace Players
                 OnPlayerDeadInvoke();
             }
         }
-        
+
         private bool CheckIsDead()
         {
-            if (PlayerProperties.HighestWidth - transform.position.y > 5.5)
+            float screenBottomY = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0)).y;
+            if (transform.position.y < screenBottomY)
             {
                 return true;
             }
-
             return false;
         }
-        
-        
+
         public void OnPlayerDeadInvoke()
         {
             OnPlayerDead?.Invoke();
             m_IsDead = true;
-            
             gameObject.SetActive(false);
         }
     }
