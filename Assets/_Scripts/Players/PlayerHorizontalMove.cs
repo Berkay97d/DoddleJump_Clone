@@ -62,9 +62,15 @@ namespace Players
         {
             if (!GameManager.GetCanPlay()) return;
 
-            float normalizedX = TouchInputManager.GetWorldPosition().x / (Screen.width / 2f);
-            
-            float screenMovementLimitLine = 0.00290f;
+            Camera mainCamera = Camera.main;
+            if (mainCamera == null) return;
+
+            float screenWidth = 2f * mainCamera.orthographicSize * mainCamera.aspect;
+            float normalizedX = TouchInputManager.GetWorldPosition().x / (screenWidth / 2f);
+
+            float screenMovementLimitLine = 0.910f;
+
+            Debug.Log(Mathf.Abs(normalizedX));
             
             if (Mathf.Abs(normalizedX) < screenMovementLimitLine)
             {
@@ -74,13 +80,14 @@ namespace Players
                     m_CanChangeInput = true;
                     return;
                 }
-                
+
                 return;
             }
 
             m_CanChangeInput = false;
             Move();
         }
+
 
 
         private void Move()

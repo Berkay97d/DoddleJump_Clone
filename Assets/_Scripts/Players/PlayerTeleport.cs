@@ -6,11 +6,7 @@ namespace Players
     {
         private float m_XLim;
         private float m_TpPos;
-
-        private void Start()
-        {
-            SetXLimAndTpPos();
-        }
+        
 
         private void Update()
         {
@@ -27,6 +23,8 @@ namespace Players
 
         private void Teleport()
         {
+            SetXLimAndTpPos();
+            
             if (transform.position.x > m_XLim)
             {
                 var position = transform.position;

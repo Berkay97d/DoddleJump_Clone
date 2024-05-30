@@ -9,9 +9,17 @@ namespace DefaultNamespace
         private void Update()
         {
             float screenAspect = (float)Screen.width / (float)Screen.height;
-            float targetWidth = rink.bounds.size.x;
+            float targetAspect = rink.bounds.size.x / rink.bounds.size.y;
 
-            Camera.main.orthographicSize = targetWidth / (2 * screenAspect);
+            if (screenAspect >= targetAspect)
+            {
+                Camera.main.orthographicSize = rink.bounds.size.y / 2;
+            }
+            else
+            {
+                float differenceInSize = targetAspect / screenAspect;
+                Camera.main.orthographicSize = rink.bounds.size.y / 2 * differenceInSize;
+            }
         }
     }
 }
