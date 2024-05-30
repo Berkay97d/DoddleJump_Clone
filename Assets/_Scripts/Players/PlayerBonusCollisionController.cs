@@ -31,7 +31,7 @@ namespace Players
 
             if (velocity.y > 0)
             {
-                _player.GetRigidbody().velocity = Vector2.zero;
+                _player.GetRigidbody().velocity = new Vector2(0f, 3f);
             }
             else
             {
