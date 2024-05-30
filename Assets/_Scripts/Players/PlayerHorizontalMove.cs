@@ -64,9 +64,13 @@ namespace Players
 
             float normalizedX = TouchInputManager.GetWorldPosition().x / (Screen.width / 2f);
             
-            if (Mathf.Abs(normalizedX) < 0.003f)
+            Debug.Log(Mathf.Abs(normalizedX));
+
+            float screenMovementLimitLine = 0.0035f;
+            
+            if (Mathf.Abs(normalizedX) < screenMovementLimitLine)
             {
-                if (Mathf.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) > 0.1f)
+                if (Mathf.Abs(transform.position.x - TouchInputManager.GetWorldPosition().x) > 0.05f)
                 {
                     Move();
                     m_CanChangeInput = true;
