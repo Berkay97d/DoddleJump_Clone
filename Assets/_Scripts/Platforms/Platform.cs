@@ -9,7 +9,8 @@ namespace Platforms
         {
             if (transform.position.y + 5.5 < PlayerProperties.Instance.transform.position.y)
             {
-                Destroy(gameObject);        
+                // Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
 
