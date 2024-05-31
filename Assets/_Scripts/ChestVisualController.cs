@@ -56,9 +56,9 @@ public class ChestVisualController : MonoBehaviour
     {
         return _chest ? _chest : null;
     }
+
     
-    [Button]
-    public void ShowDamageSprite()
+    private void ShowDamageSprite()
     {
         m_CancellationTokenSource?.Cancel();
         m_CancellationTokenSource = new CancellationTokenSource();
