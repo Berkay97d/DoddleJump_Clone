@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf64ae387aef4f4b89863c3368040d6e, type: 3}
   m_Name: SakirVisualSO
   m_EditorClassIdentifier: 
-  _iconSprite: {fileID: -820987670, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
-  _normalSprite: {fileID: -343035609, guid: 2429a37e58233eb4ea674e72dd44bad4, type: 3}
-  _jumpSprite: {fileID: -816859319, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  _iconSprite: {fileID: 880324958, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
+  _normalSprite: {fileID: -357752356, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
+  _jumpSprite: {fileID: -461544218, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
   _isFlip: 0
   _isCanan: 0

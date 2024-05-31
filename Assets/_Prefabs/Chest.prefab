@@ -120,8 +120,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.09, y: 0.09, z: 0.25714287}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3125162749587354666}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -166,7 +166,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1184802797, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  m_Sprite: {fileID: -1171822124, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -191,9 +191,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chest: {fileID: 9151725467037087616}
   _spriteRenderer: {fileID: 105693605356193037}
-  _normalChestSprite: {fileID: -1184802797, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
-  _damageChestSprite: {fileID: 23518186, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  _normalChestSprite: {fileID: -1171822124, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
+  _damageChestSprite: {fileID: -1149190623, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
   _damageDisplayDuration: 0.125
+  _2healthChestSprite: {fileID: 810038762, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
+  _1healthChestSprite: {fileID: -795508610, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
 --- !u!1 &8204293924457283372
 GameObject:
   m_ObjectHideFlags: 0

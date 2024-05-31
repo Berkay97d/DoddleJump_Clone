@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf64ae387aef4f4b89863c3368040d6e, type: 3}
   m_Name: RemziVisualSO
   m_EditorClassIdentifier: 
-  _iconSprite: {fileID: 1033189819, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
-  _normalSprite: {fileID: 1060679729, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
-  _jumpSprite: {fileID: 1939026296, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  _iconSprite: {fileID: -946975861, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
+  _normalSprite: {fileID: 898791263, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
+  _jumpSprite: {fileID: -1341942706, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
   _isFlip: 1
+  _isCanan: 0

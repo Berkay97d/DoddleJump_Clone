@@ -1,0 +1,1020 @@
+fileFormatVersion: 2
+guid: df45b5cb1d1ee2d4fad4c26df53e48bf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: x Play Again
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 4498
+        width: 804
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e72b831ef614af4bbbe15cba255c1bd
+      internalID: -491180881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: x Score Background
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 4495
+        width: 460
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c552a4a6e47b8d48b8c071b33f64fcd
+      internalID: -1804649634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_2
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 4552
+        width: 346
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f030faf1eb298b743bdb283bdb36499b
+      internalID: 773549151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_3
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 4553
+        width: 133
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac7476508040f1479f8a000363b9826
+      internalID: 275508743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_4
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 4459
+        width: 403
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d4e5a15711dec4486ccd3a72f3cbda
+      internalID: -795508610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_5
+      rect:
+        serializedVersion: 2
+        x: 3541
+        y: 4632
+        width: 440
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39f13df5d544384daf4416eb2e4ae1c
+      internalID: 1816118028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: x Vulture Down
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 4268
+        width: 460
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c32f0e15f148945988236b40e90eb7
+      internalID: 1669700915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_7
+      rect:
+        serializedVersion: 2
+        x: 3541
+        y: 4210
+        width: 426
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155e1b79ee0333e40881df75fb4ff1b3
+      internalID: -1171822124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_8
+      rect:
+        serializedVersion: 2
+        x: 4077
+        y: 4479
+        width: 153
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8def211e61ffe84380e0a39bc401669
+      internalID: 81305737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_9
+      rect:
+        serializedVersion: 2
+        x: 4344
+        y: 4479
+        width: 154
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfec1ccb35cd07d459f41e6e1fb2f58c
+      internalID: -252860993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: x Pause Background
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 3504
+        width: 932
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b812f2460c985c4eb05bcb37979021e
+      internalID: 355406499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: x Ballons
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 3502
+        width: 498
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b827f4d1d34c5942b02ffb33275181f
+      internalID: -462121040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_12
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 3981
+        width: 556
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6711d88f0081644a600948c3e3cfcf
+      internalID: -806581609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_13
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 3962
+        width: 459
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17696bce0c09004b8fc7cb3cf4e277c
+      internalID: 167947106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_14
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 3847
+        width: 421
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12c31f1b3944244cb02c1ac33bd1762
+      internalID: -461544218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_15
+      rect:
+        serializedVersion: 2
+        x: 3557
+        y: 3749
+        width: 358
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a72e59aa157b343946af0e35c09167
+      internalID: 1188421068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_16
+      rect:
+        serializedVersion: 2
+        x: 4077
+        y: 4096
+        width: 402
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5c778b0540e7342ae865cbf7e72488
+      internalID: 1712215801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_17
+      rect:
+        serializedVersion: 2
+        x: 4038
+        y: 3637
+        width: 355
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f338b1abd4f05bd43992702aaf5d635c
+      internalID: -946975861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_18
+      rect:
+        serializedVersion: 2
+        x: 4594
+        y: 3904
+        width: 134
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fa75b730ada1b40b6efccf708374ea
+      internalID: -1115234690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_19
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 3331
+        width: 479
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d393d9b78856db468f035b94b061c9b
+      internalID: -1813913659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_20
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 3330
+        width: 480
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a08d95e64fe9743b00ccd69bcf8791
+      internalID: -1341942706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_21
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 3235
+        width: 407
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8c7a1de2667374a8beb54d4713fd2c
+      internalID: 898791263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_22
+      rect:
+        serializedVersion: 2
+        x: 4516
+        y: 3637
+        width: 155
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6fea246c20c8944b3e254bd574ff64
+      internalID: -1088547778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: x Character Select Background
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 133
+        width: 1494
+        height: 3243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40713455ec139845985f7369e21cb97
+      internalID: -832862247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_24
+      rect:
+        serializedVersion: 2
+        x: 3484
+        y: 3235
+        width: 345
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd8fbd18d32d7042877e1007b99a0b6
+      internalID: -239193676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_25
+      rect:
+        serializedVersion: 2
+        x: 3942
+        y: 3177
+        width: 365
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f068a0e76582a0429f25ae967dd0b25
+      internalID: 880324958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_26
+      rect:
+        serializedVersion: 2
+        x: 4421
+        y: 3177
+        width: 346
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8ef4d4178818148b9a83907bd76e04
+      internalID: -1149789377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_27
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 2813
+        width: 1014
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ac8aeb3fedd7742a75744657b2facb
+      internalID: -1479100219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_28
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 2966
+        width: 786
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9e62059cbaf62428727888b79fe41f
+      internalID: -1010266759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_29
+      rect:
+        serializedVersion: 2
+        x: 4211
+        y: 2756
+        width: 422
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba5eea4a27c40e4b87e712d1ccaf5d1
+      internalID: 810038762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_30
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 125
+        width: 1456
+        height: 2574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863889170bcf5a1459184467cd55ef30
+      internalID: -70409995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_31
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 2698
+        width: 789
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021399ef0a72f0a45a60bfa0e8d5650c
+      internalID: 420973423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_32
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 2172
+        width: 804
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e15f411f6dea3846b2f3128b37490ca
+      internalID: 159813892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_33
+      rect:
+        serializedVersion: 2
+        x: 4211
+        y: 2163
+        width: 403
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d1b4529c2db4844b3848a7eebe55fc
+      internalID: -357752356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_34
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 128
+        width: 1095
+        height: 1939
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4597a9384d2a5cd4da7fc5f0f93d1ef1
+      internalID: -649518906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_35
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 1664
+        width: 250
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06e688bf54808e48b07df67faea3d00
+      internalID: -1149190623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_36
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 1339
+        width: 211
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d48abef4339c1c4ebb504563ccc7965
+      internalID: 463311012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_37
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 1014
+        width: 212
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affa2b18ccbc3134bb3c4f2ffdd75057
+      internalID: -1015307162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_38
+      rect:
+        serializedVersion: 2
+        x: 4516
+        y: 689
+        width: 213
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e11815aa3fbb844fb4a18b1f33578ed
+      internalID: -2003264534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarajumpAssetsv2_39
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 115
+        width: 269
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbb320a96eed5f4e9b876865f45d163
+      internalID: -1743959182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KarajumpAssetsv2_12: -806581609
+      KarajumpAssetsv2_13: 167947106
+      KarajumpAssetsv2_14: -461544218
+      KarajumpAssetsv2_15: 1188421068
+      KarajumpAssetsv2_16: 1712215801
+      KarajumpAssetsv2_17: -946975861
+      KarajumpAssetsv2_18: -1115234690
+      KarajumpAssetsv2_19: -1813913659
+      KarajumpAssetsv2_2: 773549151
+      KarajumpAssetsv2_20: -1341942706
+      KarajumpAssetsv2_21: 898791263
+      KarajumpAssetsv2_22: -1088547778
+      KarajumpAssetsv2_24: -239193676
+      KarajumpAssetsv2_25: 880324958
+      KarajumpAssetsv2_26: -1149789377
+      KarajumpAssetsv2_27: -1479100219
+      KarajumpAssetsv2_28: -1010266759
+      KarajumpAssetsv2_29: 810038762
+      KarajumpAssetsv2_3: 275508743
+      KarajumpAssetsv2_30: -70409995
+      KarajumpAssetsv2_31: 420973423
+      KarajumpAssetsv2_32: 159813892
+      KarajumpAssetsv2_33: -357752356
+      KarajumpAssetsv2_34: -649518906
+      KarajumpAssetsv2_35: -1149190623
+      KarajumpAssetsv2_36: 463311012
+      KarajumpAssetsv2_37: -1015307162
+      KarajumpAssetsv2_38: -2003264534
+      KarajumpAssetsv2_39: -1743959182
+      KarajumpAssetsv2_4: -795508610
+      KarajumpAssetsv2_5: 1816118028
+      KarajumpAssetsv2_7: -1171822124
+      KarajumpAssetsv2_8: 81305737
+      KarajumpAssetsv2_9: -252860993
+      x Ballons: -462121040
+      x Character Select Background: -832862247
+      x Pause Background: 355406499
+      x Play Again: -491180881
+      x Score Background: -1804649634
+      x Vulture Down: 1669700915
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

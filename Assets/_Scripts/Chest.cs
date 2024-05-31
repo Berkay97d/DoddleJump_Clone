@@ -7,13 +7,13 @@ public class Chest : MonoBehaviour
     [SerializeField] private ChestVisualController _chestVisualController;
     [SerializeField] private int _health;
     
-    public event Action OnHealthChanged;
+    public event Action<int> OnHealthChanged;
     
     
     private void SetHealth(int health)
     {
         _health = health;
-        OnHealthChanged?.Invoke();
+        OnHealthChanged?.Invoke(health);
         
         if (GetHealth() <= 0)
         {

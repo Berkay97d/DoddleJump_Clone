@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.26, y: 0.26, z: 0.52}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7697771856493611894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -661898177, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  m_Sprite: {fileID: -2003264534, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
   _coin: {fileID: 1417890055000200192}
   _spriteRenderer: {fileID: 7321249238687257288}
   _coinSprites:
-  - {fileID: -661898177, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
-  - {fileID: -1579579591, guid: 62d5c42f59002b447bd9efe41b47ddff, type: 3}
+  - {fileID: -2003264534, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
+  - {fileID: -1015307162, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
 --- !u!1 &6628468811555965202
 GameObject:
   m_ObjectHideFlags: 0
