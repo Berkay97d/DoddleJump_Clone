@@ -2,7 +2,6 @@
 using System.Threading;
 using UnityEngine;
 using Cysharp.Threading.Tasks;
-using NaughtyAttributes;
 
 public class ChestVisualController : MonoBehaviour
 {
