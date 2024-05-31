@@ -69,8 +69,6 @@ namespace Players
             float normalizedX = TouchInputManager.GetWorldPosition().x / (screenWidth / 2f);
 
             float screenMovementLimitLine = 0.875f;
-
-            Debug.Log(Mathf.Abs(normalizedX));
             
             if (Mathf.Abs(normalizedX) < screenMovementLimitLine)
             {
