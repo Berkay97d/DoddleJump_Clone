@@ -23,7 +23,7 @@ public class Chest : MonoBehaviour
 
     private void DestroySelf()
     {
-        Destroy(gameObject);
+        if (gameObject) Destroy(gameObject);
     }
 
     private int GetHealth()

@@ -35,6 +35,8 @@ public class ChestVisualController : MonoBehaviour
     
     private void OnHealthChanged(int health)
     {
+        if (!_chest || !this) return;
+        
         ShowDamageSprite();
 
         switch (health)
@@ -51,18 +53,24 @@ public class ChestVisualController : MonoBehaviour
 
     private async UniTaskVoid DisplayDamageSpriteAsync(CancellationToken token)
     {
-        SetSprite(_damageChestSprite);
-        transform.localScale = Vector3.one * 0.150f;
-        try
+        if (!_chest || !this) return;
+
+        if (_damageChestSprite) SetSprite(_damageChestSprite);
+        if (transform)
         {
-            await UniTask.Delay(TimeSpan.FromSeconds(_damageDisplayDuration), cancellationToken: token);
+            transform.localScale = Vector3.one * 0.150f;
+            try
+            {
+                await UniTask.Delay(TimeSpan.FromSeconds(_damageDisplayDuration), cancellationToken: token);
+            }
+            catch (OperationCanceledException)
+            {
+                return;
+            }
+
+            if (m_CurrentSprite) SetSprite(m_CurrentSprite);
+            if (transform) transform.localScale = Vector3.one * 0.090f;
         }
-        catch (OperationCanceledException)
-        {
-            return;
-        }
-        SetSprite(m_CurrentSprite);
-        transform.localScale = Vector3.one * 0.090f;
     }
     
     private void SetSprite(Sprite sprite)
