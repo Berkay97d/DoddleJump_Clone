@@ -23,7 +23,7 @@ public class PlatformCreator : MonoBehaviour
                 continue;
             }
             
-            Instantiate(randomPlatform, new Vector3(0, index * 10, 0), Quaternion.identity);
+            Instantiate(randomPlatform, new Vector3(0, index * 11, 0), Quaternion.identity);
         }
     }
 

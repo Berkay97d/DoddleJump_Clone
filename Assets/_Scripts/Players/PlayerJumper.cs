@@ -26,10 +26,7 @@ namespace Players
     
         private void TryJump(float force)
         {
-            if (!PlayerProperties.Instance.IsFalling())
-            {
-                return;
-            }
+            if (!PlayerProperties.Instance.IsFalling()) return;
 
             Jump(force);
         }
@@ -50,8 +47,6 @@ namespace Players
 
         private void OnCollisionEnter2D(Collision2D col)
         {
-             // if (m_jumpForce > 12) return;
-            
             if (col.collider.CompareTag("Platform"))
             {
                 TryJump(_jumpForce);

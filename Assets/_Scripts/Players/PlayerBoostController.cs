@@ -64,7 +64,6 @@ namespace Players
         private void OnBoostOver()
         {
             m_IsBoosted = false;
-            _player.SetCanDead(true);
             m_WearableBoost.OnBoostOver -= OnBoostOver;
        
             m_Rb.velocity = Vector2.up * 7;

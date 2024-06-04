@@ -29,7 +29,7 @@ namespace Players
 
         public bool IsFalling()
         {
-            return rb.velocity.y < 0.1f;
+            return rb.velocity.y < 2.45f;
         }
 
         private void UpdateHighestWidth()
