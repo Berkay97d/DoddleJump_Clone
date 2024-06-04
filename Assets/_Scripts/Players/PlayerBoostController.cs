@@ -42,6 +42,7 @@ namespace Players
                 wearableBoostCap.OnBoostOver += OnBoostOver;
 
                 m_IsBoosted = true;
+                _player.SetHasBoost(true);
                 _player.SetCanDead(false);
             }
 
@@ -54,6 +55,7 @@ namespace Players
                 wearableBoostRocket.OnBoostOver += OnBoostOver;
           
                 m_IsBoosted = true;
+                _player.SetHasBoost(true);
                 _player.SetCanDead(false);
             }
         }

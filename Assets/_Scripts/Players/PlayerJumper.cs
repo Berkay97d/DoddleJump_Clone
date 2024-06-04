@@ -41,6 +41,7 @@ namespace Players
             velocity.y = force;
             m_Rb.velocity = velocity;
             
+            _player.SetHasBoost(force > _jumpForce);
             _player.SetCanDead(force <= _jumpForce);
             
             OnJump?.Invoke(force);

@@ -21,6 +21,7 @@ namespace Players
         
         private CharacterVisualSO m_CharacterVisual;
         private bool m_CanDead;
+        private bool m_HasBoost;
 
 
         private void Awake()
@@ -103,6 +104,16 @@ namespace Players
         public void SetCanDead(bool canDead)
         {
             m_CanDead = canDead;
+        }
+        
+        public bool GetHasBoost()
+        {
+            return m_HasBoost;
+        }
+        
+        public void SetHasBoost(bool hasBoost)
+        {
+            m_HasBoost = hasBoost;
         }
     }
 }
