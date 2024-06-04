@@ -7,6 +7,7 @@ namespace Players
     {
         [SerializeField] private Transform _capBoostParent;
         [SerializeField] private Transform _backpackBoostParent;
+        [SerializeField] private Player _player;
 
         private bool m_IsBoosted;
         private WearableBoost m_WearableBoost;
@@ -41,6 +42,7 @@ namespace Players
                 wearableBoostCap.OnBoostOver += OnBoostOver;
 
                 m_IsBoosted = true;
+                _player.SetCanDead(false);
             }
 
             if (col.CompareTag("Rocket") && col.gameObject.TryGetComponent(out WearableBoost wearableBoostRocket))
@@ -52,6 +54,7 @@ namespace Players
                 wearableBoostRocket.OnBoostOver += OnBoostOver;
           
                 m_IsBoosted = true;
+                _player.SetCanDead(false);
             }
         }
    
@@ -59,6 +62,7 @@ namespace Players
         private void OnBoostOver()
         {
             m_IsBoosted = false;
+            _player.SetCanDead(true);
             m_WearableBoost.OnBoostOver -= OnBoostOver;
        
             m_Rb.velocity = Vector2.up * 7;

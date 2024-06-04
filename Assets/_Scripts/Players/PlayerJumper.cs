@@ -1,12 +1,16 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Players
 {
     public class PlayerJumper : MonoBehaviour
     {
+        [SerializeField] private Player _player;
+        
+        [FormerlySerializedAs("jumpForce")]
         [Header("Values")]
-        [SerializeField] private float jumpForce;
+        [SerializeField] private float _jumpForce;
         
         public static event Action<float> OnJump; 
 
@@ -37,6 +41,8 @@ namespace Players
             velocity.y = force;
             m_Rb.velocity = velocity;
             
+            _player.SetCanDead(force <= _jumpForce);
+            
             OnJump?.Invoke(force);
         }
 
@@ -47,24 +53,24 @@ namespace Players
             
             if (col.collider.CompareTag("Platform"))
             {
-                TryJump(jumpForce);
-                m_jumpForce = jumpForce;
+                TryJump(_jumpForce);
+                m_jumpForce = _jumpForce;
                 
                 return;
             }
         
             if (col.collider.CompareTag("Jumper"))
             {
-                TryJump(jumpForce * 3);
-                m_jumpForce = jumpForce * 3;
+                TryJump(_jumpForce * 3);
+                m_jumpForce = _jumpForce * 3;
                 
                 return;
             }
 
             if (col.collider.CompareTag("Spring"))
             {
-                TryJump(jumpForce * 1.75f);
-                m_jumpForce = jumpForce * 1.75f;
+                TryJump(_jumpForce * 1.75f);
+                m_jumpForce = _jumpForce * 1.75f;
                 
                 return;
             }

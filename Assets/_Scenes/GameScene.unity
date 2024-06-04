@@ -35106,7 +35106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a92f45c203b7b842a91e7955f67b0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 12
+  _player: {fileID: 1595012233}
+  _jumpForce: 12
 --- !u!114 &1595012226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35228,6 +35229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _capBoostParent: {fileID: 1234877999}
   _backpackBoostParent: {fileID: 2099342893}
+  _player: {fileID: 1595012233}
 --- !u!114 &1595012233
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ namespace Players
         [SerializeField] private Sprite _jumpSprite;
         
         private CharacterVisualSO m_CharacterVisual;
+        private bool m_CanDead;
 
 
         private void Awake()
@@ -92,6 +93,16 @@ namespace Players
         public PlayerBoostController GetPlayerBoostController()
         {
             return _playerBoostController;
+        }
+        
+        public bool GetCanDead()
+        {
+            return m_CanDead;
+        }
+        
+        public void SetCanDead(bool canDead)
+        {
+            m_CanDead = canDead;
         }
     }
 }

@@ -32,8 +32,7 @@ namespace Players
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.CompareTag("Obstacle")) return;
-            if (_playerBoostController.GetIsBoosted()) return;
-            if (_player.GetRigidbody().velocity.y > 11) return;
+            if (!_player.GetCanDead()) return;
                 
             _playerDeadChecker.OnPlayerDeadInvoke();
         }
