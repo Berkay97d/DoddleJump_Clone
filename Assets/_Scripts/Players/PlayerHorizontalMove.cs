@@ -70,7 +70,7 @@ namespace Players
 
             float screenMovementLimitLine = 0.85f;
 
-            Debug.Log(Mathf.Abs(normalizedX) + " " + (Mathf.Abs(normalizedX) < screenMovementLimitLine));
+            // Debug.Log(Mathf.Abs(normalizedX) + " " + (Mathf.Abs(normalizedX) < screenMovementLimitLine));
             
             if (Mathf.Abs(normalizedX) < screenMovementLimitLine)
             {
