@@ -27,9 +27,11 @@ namespace Players
             UpdateHighestWidth();
         }
 
-        public bool IsFalling()
+        public bool IsFalling(bool isLogging = false)
         {
-            return rb.velocity.y < 2.45f;
+            if (isLogging)  Debug.Log($"{rb.velocity.y} < 2.48f = {rb.velocity.y < 2.48f}");
+            
+            return rb.velocity.y < 2.48f;
         }
 
         private void UpdateHighestWidth()
