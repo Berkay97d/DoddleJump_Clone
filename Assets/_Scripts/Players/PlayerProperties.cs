@@ -29,8 +29,6 @@ namespace Players
 
         public bool IsFalling(bool isLogging = false)
         {
-            if (isLogging)  Debug.Log($"{rb.velocity.y} < 2.48f = {rb.velocity.y < 2.48f}");
-            
             return rb.velocity.y < 2.48f;
         }
 

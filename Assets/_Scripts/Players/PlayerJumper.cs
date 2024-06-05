@@ -26,7 +26,7 @@ namespace Players
     
         private void TryJump(float force)
         {
-            if (!PlayerProperties.Instance.IsFalling(true)) return;
+            if (!PlayerProperties.Instance.IsFalling(true) || _player.GetPlayerBoostController().GetIsBoosted()) return;
 
             Jump(force);
         }
@@ -42,8 +42,6 @@ namespace Players
             _player.SetCanDead(force <= _jumpForce);
             
             OnJump?.Invoke(force);
-            
-            Debug.Log("Jumped!");
         }
 
 
