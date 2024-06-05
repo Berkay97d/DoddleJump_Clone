@@ -16,7 +16,6 @@ public class ChestVisualController : MonoBehaviour
     private CancellationTokenSource m_CancellationTokenSource;
     private Sprite m_CurrentSprite;
 
-
     private void Awake()
     {
         _chest.OnHealthChanged += OnHealthChanged;
@@ -30,12 +29,12 @@ public class ChestVisualController : MonoBehaviour
     private void OnDestroy()
     {
         _chest.OnHealthChanged -= OnHealthChanged;
+        m_CancellationTokenSource?.Cancel();
     }
-    
     
     private void OnHealthChanged(int health)
     {
-        if (!_chest || !this) return;
+        if (_chest == null || this == null) return;
         
         ShowDamageSprite();
 
@@ -47,44 +46,50 @@ public class ChestVisualController : MonoBehaviour
             case 1:
                 m_CurrentSprite = _1healthChestSprite;
                 break;
+            default:
+                m_CurrentSprite = _normalChestSprite;
+                break;
         }
     }
 
-
     private async UniTaskVoid DisplayDamageSpriteAsync(CancellationToken token)
     {
-        if (!_chest || !this) return;
+        if (_chest == null || this == null) return;
 
         if (_damageChestSprite) SetSprite(_damageChestSprite);
-        if (transform)
-        {
-            transform.localScale = Vector3.one * 0.150f;
-            try
-            {
-                await UniTask.Delay(TimeSpan.FromSeconds(_damageDisplayDuration), cancellationToken: token);
-            }
-            catch (OperationCanceledException)
-            {
-                return;
-            }
 
-            if (m_CurrentSprite) SetSprite(m_CurrentSprite);
-            if (transform) transform.localScale = Vector3.one * 0.090f;
+        if (transform == null) return;
+        
+        transform.localScale = Vector3.one * 0.150f;
+
+        try
+        {
+            await UniTask.Delay(TimeSpan.FromSeconds(_damageDisplayDuration), cancellationToken: token);
         }
+        catch (OperationCanceledException)
+        {
+            return;
+        }
+
+        if (_chest == null || this == null || transform == null) return;
+        
+        if (m_CurrentSprite) SetSprite(m_CurrentSprite);
+        transform.localScale = Vector3.one * 0.090f;
     }
     
     private void SetSprite(Sprite sprite)
     {
-        if (_spriteRenderer) _spriteRenderer.sprite = sprite;
+        if (_spriteRenderer != null)
+        {
+            _spriteRenderer.sprite = sprite;
+        }
     }
-    
-    
+
     public Chest GetChest()
     {
         return _chest ? _chest : null;
     }
 
-    
     private void ShowDamageSprite()
     {
         m_CancellationTokenSource?.Cancel();
