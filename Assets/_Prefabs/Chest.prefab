@@ -292,3 +292,5 @@ MonoBehaviour:
   _chestCollisionController: {fileID: 2723549324934415257}
   _chestVisualController: {fileID: 2179037288598369565}
   _health: 3
+  _point: {fileID: 9192764947389471010, guid: 89fd1bc9e7524e848b4429cf8ed772da, type: 3}
+  _chestColor: {r: 0.85098046, g: 0.4901961, b: 0, a: 1}

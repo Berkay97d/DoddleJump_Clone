@@ -3,6 +3,7 @@
 public class PlatformCreator : MonoBehaviour
 {
     [SerializeField] private GameObject[] _platformArray;
+    [SerializeField] private Transform _platformParent;
     
     private void Start()
     {
@@ -19,11 +20,11 @@ public class PlatformCreator : MonoBehaviour
 
             if (index == 0)
             {
-                Instantiate(_platformArray[0], Vector3.zero, Quaternion.identity);
+                Instantiate(_platformArray[0], Vector3.zero, Quaternion.identity, _platformParent);
                 continue;
             }
             
-            Instantiate(randomPlatform, new Vector3(0, index * 11, 0), Quaternion.identity);
+            Instantiate(randomPlatform, new Vector3(0, index * 11, 0), Quaternion.identity, _platformParent);
         }
     }
 

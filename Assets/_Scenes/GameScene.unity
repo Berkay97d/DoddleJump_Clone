@@ -6805,7 +6805,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -20149,6 +20149,38 @@ MonoBehaviour:
   _button: {fileID: 937396632}
   _fadeDuration: 0.5
   _fadeCanvasGroup: {fileID: 659098621}
+--- !u!1 &939405569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939405570}
+  m_Layer: 0
+  m_Name: ---------------------------------------------------------------------------
+    (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939405570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939405569}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &944746161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5134968620816391481, guid: 3b12cd2e30b3b554d8e909309785977f, type: 3}
@@ -32814,6 +32846,7 @@ MonoBehaviour:
   - {fileID: 5324528380631203594, guid: 44784e3df431633478e6042c692a5126, type: 3}
   - {fileID: 6579737216761194545, guid: b1c0adbd5af3f1848b27dc03d0b82c68, type: 3}
   - {fileID: 8018638139345339243, guid: e37e7c07c790d8a46b994bb348c210ad, type: 3}
+  _platformParent: {fileID: 1476935690}
 --- !u!4 &1476935690
 Transform:
   m_ObjectHideFlags: 0
@@ -46910,3 +46943,4 @@ SceneRoots:
   - {fileID: 74336262}
   - {fileID: 1616442922}
   - {fileID: 1014805756}
+  - {fileID: 939405570}

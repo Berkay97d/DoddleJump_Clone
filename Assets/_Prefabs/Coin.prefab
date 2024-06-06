@@ -148,6 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coinCollisionController: {fileID: 7276049949510015411}
   _coinVisualController: {fileID: 8118662593333963282}
+  _point: {fileID: 9192764947389471010, guid: 89fd1bc9e7524e848b4429cf8ed772da, type: 3}
+  _coinColor: {r: 0.854902, g: 0.8117648, b: 0.0627451, a: 1}
 --- !u!1 &9030385206516524294
 GameObject:
   m_ObjectHideFlags: 0
