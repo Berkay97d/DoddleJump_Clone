@@ -22,7 +22,7 @@ public class Chest : MonoBehaviour
         var pointInstance = Instantiate(_point, transform.position + Vector3.up * 0.40f, Quaternion.identity);
         var point = pointInstance.GetComponent<TMP_Text>();
 
-        if (damage == 3)
+        if (damage == -3)
         {
             point.text = "375";
             point.color = _chestColor;
