@@ -100,7 +100,6 @@ MonoBehaviour:
   _coin: {fileID: 1417890055000200192}
   _spriteRenderer: {fileID: 7321249238687257288}
   _coinSprites:
-  - {fileID: -2003264534, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
   - {fileID: -1015307162, guid: df45b5cb1d1ee2d4fad4c26df53e48bf, type: 3}
 --- !u!1 &6628468811555965202
 GameObject:
