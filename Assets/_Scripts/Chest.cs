@@ -14,14 +14,24 @@ public class Chest : MonoBehaviour
     
     public event Action<int> OnHealthChanged;
     
-    private void SetHealth(int health)
+    private void SetHealth(int health, int damage)
     {
         _health = health;
         OnHealthChanged?.Invoke(health);
         
         var pointInstance = Instantiate(_point, transform.position + Vector3.up * 0.40f, Quaternion.identity);
         var point = pointInstance.GetComponent<TMP_Text>();
+
+        if (damage == 3)
+        {
+            point.text = "375";
+            point.color = _chestColor;
+            AnimatePoint(pointInstance);
             
+            DestroySelf();
+            return;
+        }
+        
         point.text = "125";
         point.color = _chestColor;
 
@@ -43,9 +53,9 @@ public class Chest : MonoBehaviour
         Sequence sequence = DOTween.Sequence();
         sequence.Append(pointInstance.transform.DOScale(Vector3.one * 1.45f, 0.2f))
             .Join(point.DOFade(1, 0.2f))
-            .AppendInterval(1)
-            .Append(point.DOFade(0, 0.2f))
-            .Join(pointInstance.transform.DOScale(Vector3.zero, 0.2f))
+            .AppendInterval(0.50f)
+            .Append(point.DOFade(0, 0.1f))
+            .Join(pointInstance.transform.DOScale(Vector3.zero, 0.1f))
             .OnComplete(() => Destroy(pointInstance));
     }
 
@@ -71,6 +81,6 @@ public class Chest : MonoBehaviour
     
     public void AddHealth(int health)
     {
-        SetHealth(GetHealth() + health);
+        SetHealth(GetHealth() + health, health);
     }
 }
