@@ -1,10 +1,19 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
     public class CameraController : MonoBehaviour
     {
         public SpriteRenderer rink;
+
+        private Camera m_MainCamera;
+        
+        
+        private void Awake()
+        {
+            m_MainCamera = Camera.main;
+        }
 
         private void Update()
         {
@@ -13,12 +22,11 @@ namespace DefaultNamespace
 
             if (screenAspect >= targetAspect)
             {
-                Camera.main.orthographicSize = rink.bounds.size.y / 2;
+                m_MainCamera.orthographicSize = rink.bounds.size.y / 2;
             }
             else
             {
-                float differenceInSize = targetAspect / screenAspect;
-                Camera.main.orthographicSize = rink.bounds.size.y / 2 * differenceInSize;
+                m_MainCamera.orthographicSize = (rink.bounds.size.x / 2) / screenAspect;
             }
         }
     }
