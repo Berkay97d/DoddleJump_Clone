@@ -24,6 +24,7 @@ public class EndGameButton : MonoBehaviour
         Debug.Log("End Game!");
         
         AudioManager.PlayButtonClickSound();
-        Application.Quit();
+        
+        GameManager.QuitGame();
     }
 }

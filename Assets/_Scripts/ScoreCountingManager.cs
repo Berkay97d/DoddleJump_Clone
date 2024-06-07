@@ -44,6 +44,12 @@ public class ScoreCountingManager : MonoBehaviour
         ms_Instance.m_Score += amount; // Anında güncelleme için
         ms_Instance.UpdateScoreText();
     }
+    
+    public static int GetScore()
+    {
+        return ms_Instance.m_Score;
+    }
+    
 
     private void UpdateScoreText()
     {

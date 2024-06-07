@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Players
@@ -38,6 +39,14 @@ namespace Players
             OnPlayerDead?.Invoke();
             m_IsDead = true;
             gameObject.SetActive(false);
+            
+            KuponCall();
+        }
+
+        private async void KuponCall()
+        {
+            await UniTask.WaitForSeconds(0.5f);
+            GameManager.QuitGame();
         }
     }
 }
