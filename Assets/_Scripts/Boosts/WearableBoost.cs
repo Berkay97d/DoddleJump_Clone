@@ -42,17 +42,14 @@ namespace Boosts
             transform.parent = null;
             
             GetComponent<BoxCollider2D>().enabled = false;
+            /*
             transform.DOScale(Vector3.one * 0.01f, 0.25f).SetEase(Ease.InCirc).OnComplete(() =>
             {
                 gameObject.SetActive(false);
             });
-            return;
+            */
             
-            transform.DOMove(transform.position + Vector3.down * 20, 2).SetEase(Ease.InCirc).OnComplete(() =>
-            {
-                Destroy(gameObject);
-            });
-            Destroy(GetComponent<BoxCollider2D>());
+            gameObject.SetActive(false);
         }
         
         public void TriggerBoost(Transform targetTransform)
