@@ -26,6 +26,9 @@ public class PopUpController : MonoBehaviour
     
     private void OnScoreChanged(int obj)
     {
+        return;
+        
+        /*
         if (obj < _scoreToPopUp || m_IsAlreadyShowed) return;
 
         m_IsAlreadyShowed = true;
@@ -35,6 +38,7 @@ public class PopUpController : MonoBehaviour
         
         AudioManager.PlayWinPopUpSound();
         StartCoroutine(AutoDeactivatePopUp());
+        */
     }
 
     
